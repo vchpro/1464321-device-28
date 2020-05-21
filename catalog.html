@@ -73,17 +73,24 @@
           <form action="https://echo.htmlacademy.ru">
           <div>
             <span>Цвет</span>
-            <input name="color" type="checkbox" value="Черный" checked> 
-            <input name="color" type="checkbox" value="Белый">
-            <input name="color" type="checkbox" value="Синий" checked>
-            <input name="color" type="checkbox" value="Красный" checked>
-            <input name="color" type="checkbox" value="Розовый">
+            <label for='black' class='visually-hidden'>Черный</label>
+            <input id='black' name="color" type="checkbox" value="Черный" checked> 
+            <label for='white' class='visually-hidden'>Белый</label>
+            <input id='white' name="color" type="checkbox" value="Белый">
+            <label for='blue' class='visually-hidden'>Синий</label>
+            <input id='blue' name="color" type="checkbox" value="Синий" checked>
+            <label for='red' class='visually-hidden'>Красный</label>
+            <input id='red' name="color" type="checkbox" value="Красный" checked>
+            <label for='pink' class='visually-hidden'>Розовый</label>
+            <input id='pink' name="color" type="checkbox" value="Розовый">
           </div>
 
           <div>
             <span>Bluetooth</span>
-            <input name="bluetooth" type="checkbox" value="Есть" checked> 
-            <input name="bluetooth" type="checkbox" value="Нет">
+            <label for='true' class='visually-hidden'>Есть</label>
+            <input id='true' name="bluetooth" type="checkbox" value="Есть" checked> 
+            <label for='false' class='visually-hidden'>Нет</label>
+            <input id='false' name="bluetooth" type="checkbox" value="Нет">
           </div>
           <input type="submit" value="Показать">
         </form>
