@@ -9,15 +9,49 @@
         <img src="img/logo-black.svg" alt="Device" width="163" height="35">
         <nav>
           <ul>
-            <li><input type="search" placeholder="Поиск по сайту"></li>
+            <li>
+            <form action="https://echo.htmlacademy.ru">
+              <input type="search" placeholder="Поиск по сайту">
+              <input type="submit" name="submit" value="Найти">
+            </form>
+            </li>
+
             <li><a href="">Войти</a></li>
             <li><a href="">Сравнить</a></li>
             <li><a href="">Корзина</a></li>
           </ul>
           
           <ul>
-          <li><a href="">Каталог товаров</a></li>
-          <li><a href="">Доставка</a></li>
+          <li>
+          <a href="">Каталог товаров</a>
+          <!-- скрытое меню -->
+          <ul>
+            <li>
+              <a href="">Виртуальная реальность</a>
+            </li>
+
+            <li>
+              <a href="">Моноподы для селфи</a>
+            </li>
+
+            <li>
+              <a href="">Экшн-камеры</a>
+            </li>
+
+            <li>
+              <a href="">Фитнес-браслеты</a>
+            </li>
+
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+
+            <li>
+              <a href="">Квадрокоптер</a>
+            </li>
+          </ul>
+          </li>
+          <li><a href="">Доставка</a></li> 
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
@@ -47,6 +81,35 @@
             </li>
           </ul>
         </section>
+        <!-- второй слайдер -->
+        <section>
+          <img src="img/slider-2.png" alt="Селфи-палка" width="500" height="500">
+          <p>Худеем правильно!</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="">Подробнее</a>
+          <span>48 часов</span>
+          <span>Без подзарядки</span>
+        </section>
+
+        <!-- третий слайдер -->
+        <section>
+          <img src="img/slider-3.png" alt="Селфи-палка" width="500" height="500">
+          <p>Порхает как бабочка, жалит как пчела!</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="">Подробнее</a>
+          <ul>
+            <li>
+              <span>800 м</span>
+              <span>Дальность полета</span>
+            </li>
+
+            <li>
+              <span>50 м</span>
+              <span>Радиус поражения</span>
+            </li>
+          </ul>
+        </section>
+
 
         <section>
           <ul>
@@ -104,6 +167,32 @@
             </li>
           </ul>
       </section>
+      
+      <!-- меню "написания" -->
+<div>
+<button>
+  <img src='img/dagger.png'>
+</button>
+
+<form action='https://echo.htmlacademy.ru'>
+<label>
+  <span>Ваше имя:</span>
+  <input type="text" id="name" placeholder="Имя Фамилия">
+</label>
+
+<label>
+  <span>Ваш e-mail:</span>
+  <input type="mail" id="mail" placeholder="email@example.com">
+</label>
+
+<label>
+  <span>Текст письма:</span>
+  <textarea id="text" placeholder="В свободной форме"></textarea>
+</label>
+
+<input type="submit" value="Отправить">
+</form>
+</div>
 
   <section>
     <h2>О нас</h2>
@@ -117,6 +206,10 @@
     <a href="">Подробнее о нас</a>
   </section>
 
+<!-- карта -->
+  <div>
+<!-- а я не знаю что тут вставить :)  -->
+  </div>
   <section>
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>

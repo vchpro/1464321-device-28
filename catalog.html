@@ -9,16 +9,49 @@
       <img src="img/logo-black.svg" alt="Device" width="163" height="35">
       <nav>
         <ul>
-          <li><input type="search" placeholder="Поиск по сайту"></li>
-          <li><a href="">Валентин Петухов</a></li>
-          <li><a href="">Выйти</a></li>
+          <li>
+          <form action="https://echo.htmlacademy.ru">
+            <input type="search" placeholder="Поиск по сайту">
+            <input type="submit" name="submit" value="Найти">
+          </form>
+          </li>
+
+          <li><a href="">Войти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
         </ul>
         
         <ul>
-        <li><a href="">Каталог товаров</a></li>
-        <li><a href="">Доставка</a></li>
+        <li>
+        <a href="">Каталог товаров</a>
+        <!-- скрытое меню -->
+        <ul>
+          <li>
+            <a href="">Виртуальная реальность</a>
+          </li>
+
+          <li>
+            <a href="">Моноподы для селфи</a>
+          </li>
+
+          <li>
+            <a href="">Экшн-камеры</a>
+          </li>
+
+          <li>
+            <a href="">Фитнес-браслеты</a>
+          </li>
+
+          <li>
+            <a href="">Умные часы</a>
+          </li>
+
+          <li>
+            <a href="">Квадрокоптер</a>
+          </li>
+        </ul>
+        </li>
+        <li><a href="">Доставка</a></li> 
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
@@ -36,7 +69,24 @@
       <aside>
           <span>Фильтр:</span>
           <span>Стоимость</span>
+
+          <form action="https://echo.htmlacademy.ru">
+          <div>
+            <span>Цвет</span>
+            <input name="color" type="checkbox" value="Черный" checked> 
+            <input name="color" type="checkbox" value="Белый">
+            <input name="color" type="checkbox" value="Синий" checked>
+            <input name="color" type="checkbox" value="Красный" checked>
+            <input name="color" type="checkbox" value="Розовый">
+          </div>
+
+          <div>
+            <span>Bluetooth</span>
+            <input name="bluetooth" type="checkbox" value="Есть" checked> 
+            <input name="bluetooth" type="checkbox" value="Нет">
+          </div>
           <input type="submit" value="Показать">
+        </form>
       </aside>
       
 
