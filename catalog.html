@@ -11,7 +11,7 @@
         <ul>
           <li>
           <form action="https://echo.htmlacademy.ru">
-            <input type="search" placeholder="Поиск по сайту">
+            <input type="search" name="search" placeholder="Поиск по сайту">
             <button type="submit">Найти</button>
           </form>
           </li>
@@ -25,7 +25,6 @@
         <ul>
         <li>
         <a href="catalog.html">Каталог товаров</a>
-        <!-- скрытое меню -->
         <ul>
           <li>
             <a href="">Виртуальная реальность</a>
@@ -68,23 +67,26 @@
             <span>Моноподы для селфи</span>
         </section>
       <aside>
-          <h2>Фильтр:</h2>
-          <div>
-            <span>Стоимость</span>
-            <div>
-              <button>Меньше</button>
-              <span>от 0</span>
-              <hr>
-              <button>Больше</button>
-              <span>до 5000</span>
-            </div>
-          </div>
 
           <form action="https://echo.htmlacademy.ru">
+            <h2>Фильтр:</h2>
+            <fieldset>
+              <legend>Стоимость</legend>
+              <div>
+                <button type="button">Меньше</button>
+                <input type="number" name="min" min="0" readonly>
+                <span>от 0</span>
+                <div></div>
+                <button type="button">Больше</button>
+                <input type="number" name="max" max="5000" readonly>
+                <span>до 5000</span>
+              </div>
+            </fieldset>
+            <fieldset>
             <legend>Цвет</legend>
             <input id="filter-black" name="color" type="checkbox" value="Черный" checked> 
             <label for="filter-black">Черный</label>
-            <input id="filter=white" name="color" type="checkbox" value="Белый">
+            <input id="filter-white" name="color" type="checkbox" value="Белый">
             <label for="filter-white">Белый</label>
             <input id="filter-blue" name="color" type="checkbox" value="Синий" checked>
             <label for="filter-blue">Синий</label>
@@ -96,10 +98,10 @@
 
           <fieldset>
             <legend>Bluetooth</legend>
-            <input id="filter-on" name="bluetooth" type="radio" value="Есть" checked> 
-            <label for="filter-on">Есть</label>
-            <input id="filter-off" name="bluetooth" type="radio" value="Нет">
-            <label for="filter-on">Нет</label>
+            <input id="filter-bluetooth-on" name="bluetooth" type="radio" value="Есть" checked> 
+            <label for="filter-bluetooth-on">Есть</label>
+            <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет">
+            <label for="filter-bluetooth-on">Нет</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
