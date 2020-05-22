@@ -12,18 +12,19 @@
           <li>
           <form action="https://echo.htmlacademy.ru">
             <input type="search" placeholder="Поиск по сайту">
-            <input type="submit" name="submit" value="Найти">
+            <button type="submit" name="submit">Найти</button>
           </form>
           </li>
 
-          <li><a href="">Войти</a></li>
+          <li><a href="">Валентин Петухов</a></li>
+          <li><a href="">Выйти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
         </ul>
         
         <ul>
         <li>
-        <a href="">Каталог товаров</a>
+        <a href="catalog.html">Каталог товаров</a>
         <!-- скрытое меню -->
         <ul>
           <li>
@@ -63,36 +64,37 @@
         <section>
             <h1>Моноподы для селфи</h1>
             <span><a href="index.html">Главная</a></span>
-            <span><a href="">Каталог товаров</a></span>
+            <span><a href="catalog.html">Каталог товаров</a></span>
             <span>Моноподы для селфи</span>
         </section>
       <aside>
-          <span>Фильтр:</span>
-          <span>Стоимость</span>
+          <h2>Фильтр:</h2>
+          <div>
+            <span>Стоимость</span>
+          </div>
 
           <form action="https://echo.htmlacademy.ru">
-          <fieldset>
             <legend>Цвет</legend>
-            <label for='black' class='visually-hidden'>Черный</label>
-            <input id='black' name="color" type="checkbox" value="Черный" checked> 
-            <label for='white' class='visually-hidden'>Белый</label>
-            <input id='white' name="color" type="checkbox" value="Белый">
-            <label for='blue' class='visually-hidden'>Синий</label>
-            <input id='blue' name="color" type="checkbox" value="Синий" checked>
-            <label for='red' class='visually-hidden'>Красный</label>
-            <input id='red' name="color" type="checkbox" value="Красный" checked>
-            <label for='pink' class='visually-hidden'>Розовый</label>
-            <input id='pink' name="color" type="checkbox" value="Розовый">
+            <input id="filter=black" name="color" type="checkbox" value="Черный" checked> 
+            <label for="filter-black">Черный</label>
+            <input id="filter=white" name="color" type="checkbox" value="Белый">
+            <label for="filter-white">Белый</label>
+            <input id="filter-blue" name="color" type="checkbox" value="Синий" checked>
+            <label for="filter-blue">Синий</label>
+            <input id="filter-red" name="color" type="checkbox" value="Красный" checked>
+            <label for="filter-red">Красный</label>
+            <input id="filter-pink" name="color" type="checkbox" value="Розовый">
+            <label for="filter-pink">Розовый</label>
           </fieldset>
 
           <fieldset>
             <legend>Bluetooth</legend>
-            <label for='true' class='visually-hidden'>Есть</label>
-            <input id='true' name="bluetooth" type="radio" value="Есть" checked> 
-            <label for='false' class='visually-hidden'>Нет</label>
-            <input id='false' name="bluetooth" type="radio" value="Нет">
+            <input id="filter-true" name="bluetooth" type="radio" value="Есть" checked> 
+            <label for="filter-true">Есть</label>
+            <input id="filter-false" name="bluetooth" type="radio" value="Нет">
+            <label for="filter-false">Нет</label>
           </fieldset>
-          <input type="submit" value="Показать">
+          <button type="submit">Показать</button>
         </form>
       </aside>
       

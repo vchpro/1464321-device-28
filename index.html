@@ -12,7 +12,7 @@
             <li>
             <form action="https://echo.htmlacademy.ru">
               <input type="search" placeholder="Поиск по сайту">
-              <input type="submit" name="submit" value="Найти">
+              <button type="submit" name="submit">Найти</button>
             </form>
             </li>
 
@@ -23,7 +23,7 @@
           
           <ul>
           <li>
-          <a href="">Каталог товаров</a>
+          <a href="catalog.html">Каталог товаров</a>
           <!-- скрытое меню -->
           <ul>
             <li>
@@ -60,6 +60,7 @@
 
       <main>
         <section>
+          <h2 class="visually-hidden">Самая длинная селфи-палка</h2>
           <img src="img/slider-1.png" alt="Селфи-палка" width="500" height="500">
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -81,9 +82,10 @@
             </li>
           </ul>
         </section>
-        <!-- второй слайдер -->
+        <!-- второй слайд -->
         <section>
-          <img src="img/slider-2.png" alt="Селфи-палка" width="500" height="500">
+          <h2 class="visually-hidden">Мотивирующие фитнес-браслеты</h2>
+          <img src="img/slider-2.png" alt="Фитнес-браслет" width="500" height="500">
           <p>Худеем правильно!</p>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a href="">Подробнее</a>
@@ -91,9 +93,10 @@
           <span>Без подзарядки</span>
         </section>
 
-        <!-- третий слайдер -->
+        <!-- третий слайд -->
         <section>
-          <img src="img/slider-3.png" alt="Селфи-палка" width="500" height="500">
+          <h2 class="visually-hidden">Квадрокоптер с мощным лазером</h2>
+          <img src="img/slider-3.png" alt="Квадрокоптер" width="500" height="500">
           <p>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a href="">Подробнее</a>
@@ -110,6 +113,24 @@
           </ul>
         </section>
 
+        <div>
+          <ul>
+            <li>
+              <input id="slider-one" name="slider" type="radio" checked> 
+              <label for="slider-one" class="visually-hidden">Первый слайд</label>
+            </li>
+
+            <li>
+              <input id="slider-two" name="slider" type="radio">
+              <label for="slider-two" class="visually-hidden">Второй слайд</label>
+            </li>
+
+            <li>
+              <input id="slider-three" name="slider" type="radio">
+              <label for="slider-three" class="visually-hidden">Третий слайд</label>
+            </li>
+          </ul>
+        </div>
 
         <section>
           <ul>
@@ -168,31 +189,6 @@
           </ul>
       </section>
       
-      <!-- меню "написания" -->
-<div>
-<button>
-  <img src='img/dagger.png'>
-</button>
-
-<form action='https://echo.htmlacademy.ru'>
-<label>
-  <span>Ваше имя:</span>
-  <input type="text" id="name" placeholder="Имя Фамилия">
-</label>
-
-<label>
-  <span>Ваш e-mail:</span>
-  <input type="mail" id="mail" placeholder="email@example.com">
-</label>
-
-<label>
-  <span>Текст письма:</span>
-  <textarea id="text" placeholder="В свободной форме"></textarea>
-</label>
-
-<input type="submit" value="Отправить">
-</form>
-</div>
 
   <section>
     <h2>О нас</h2>
@@ -206,10 +202,6 @@
     <a href="">Подробнее о нас</a>
   </section>
 
-<!-- карта -->
-  <div>
-<!-- а я не знаю что тут вставить :)  -->
-  </div>
   <section>
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -248,5 +240,37 @@
     </a>
   </section>
 </footer>
+
+
+<!-- карта -->
+<div>
+  <img src="img/map.png">
+</div>
+
+
+  <!-- меню "написания" -->
+  <section>
+    <h2 class="visually-hidden">Написать нам</h2>
+    <button type='button'>Выйти</button>
+    
+    <form action="https://echo.htmlacademy.ru">
+    <label>
+      <span>Ваше имя:</span>
+      <input type="text" name="name" placeholder="Имя Фамилия">
+    </label>
+    
+    <label>
+      <span>Ваш e-mail:</span>
+      <input type="mail" name="mail" placeholder="email@example.com">
+    </label>
+    
+    <label>
+      <span>Текст письма:</span>
+      <textarea name="text" placeholder="В свободной форме"></textarea>
+    </label>
+    
+    <button type="submit">Отправить</button>
+    </form>
+  </section>
   </body>
 </html>
