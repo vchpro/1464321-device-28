@@ -12,7 +12,7 @@
           <li>
           <form action="https://echo.htmlacademy.ru">
             <input type="search" placeholder="Поиск по сайту">
-            <button type="submit" name="submit">Найти</button>
+            <button type="submit">Найти</button>
           </form>
           </li>
 
@@ -71,11 +71,18 @@
           <h2>Фильтр:</h2>
           <div>
             <span>Стоимость</span>
+            <div>
+              <button>Меньше</button>
+              <span>от 0</span>
+              <hr>
+              <button>Больше</button>
+              <span>до 5000</span>
+            </div>
           </div>
 
           <form action="https://echo.htmlacademy.ru">
             <legend>Цвет</legend>
-            <input id="filter=black" name="color" type="checkbox" value="Черный" checked> 
+            <input id="filter-black" name="color" type="checkbox" value="Черный" checked> 
             <label for="filter-black">Черный</label>
             <input id="filter=white" name="color" type="checkbox" value="Белый">
             <label for="filter-white">Белый</label>
@@ -89,10 +96,10 @@
 
           <fieldset>
             <legend>Bluetooth</legend>
-            <input id="filter-true" name="bluetooth" type="radio" value="Есть" checked> 
-            <label for="filter-true">Есть</label>
-            <input id="filter-false" name="bluetooth" type="radio" value="Нет">
-            <label for="filter-false">Нет</label>
+            <input id="filter-on" name="bluetooth" type="radio" value="Есть" checked> 
+            <label for="filter-on">Есть</label>
+            <input id="filter-off" name="bluetooth" type="radio" value="Нет">
+            <label for="filter-on">Нет</label>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -133,6 +140,10 @@
             <h2>Любительская селфи-палка</h2>
             <span>500руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -141,6 +152,10 @@
             <h2>Профессиональная селфи-палка</h2>
             <span>1 500руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -149,6 +164,10 @@
             <h2>Непотопляемая селфи-палка</h2>
             <span>2 500 руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -157,6 +176,10 @@
             <h2>Селфи-палка «Следуй за мной»</h2>
             <span>4 900 руб..</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
       </section>
 
