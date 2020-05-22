@@ -5,21 +5,53 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-  <!-- h1 потом добавлю (visually-hidden)
-    В h1 будет что-то вроде "Интернет магазин Device"  -->
       <header>
         <img src="img/logo-black.svg" alt="Device" width="163" height="35">
         <nav>
           <ul>
-            <li><input type="search" placeholder="Поиск по сайту"></li>
+            <li>
+            <form action="https://echo.htmlacademy.ru">
+              <input type="search" placeholder="Поиск по сайту">
+              <button type="submit" name="submit">Найти</button>
+            </form>
+            </li>
+
             <li><a href="">Войти</a></li>
             <li><a href="">Сравнить</a></li>
             <li><a href="">Корзина</a></li>
           </ul>
           
           <ul>
-          <li><a href="">Каталог товаров</a></li>
-          <li><a href="">Доставка</a></li>
+          <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <!-- скрытое меню -->
+          <ul>
+            <li>
+              <a href="">Виртуальная реальность</a>
+            </li>
+
+            <li>
+              <a href="">Моноподы для селфи</a>
+            </li>
+
+            <li>
+              <a href="">Экшн-камеры</a>
+            </li>
+
+            <li>
+              <a href="">Фитнес-браслеты</a>
+            </li>
+
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+
+            <li>
+              <a href="">Квадрокоптер</a>
+            </li>
+          </ul>
+          </li>
+          <li><a href="">Доставка</a></li> 
           <li><a href="">Гарантия</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
@@ -28,6 +60,7 @@
 
       <main>
         <section>
+          <h2 class="visually-hidden">Самая длинная селфи-палка</h2>
           <img src="img/slider-1.png" alt="Селфи-палка" width="500" height="500">
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -49,6 +82,52 @@
             </li>
           </ul>
         </section>
+        <!-- второй слайд -->
+        <section>
+          <h2 class="visually-hidden">Мотивирующие фитнес-браслеты</h2>
+          <img src="img/slider-2.png" alt="Фитнес-браслет" width="500" height="500">
+          <p>Худеем правильно!</p>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a href="">Подробнее</a>
+          <span>48 часов</span>
+          <span>Без подзарядки</span>
+        </section>
+
+        <!-- третий слайд -->
+        <section>
+          <h2 class="visually-hidden">Квадрокоптер с мощным лазером</h2>
+          <img src="img/slider-3.png" alt="Квадрокоптер" width="500" height="500">
+          <p>Порхает как бабочка, жалит как пчела!</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="">Подробнее</a>
+          <ul>
+            <li>
+              <span>800 м</span>
+              <span>Дальность полета</span>
+            </li>
+
+            <li>
+              <span>50 м</span>
+              <span>Радиус поражения</span>
+            </li>
+          </ul>
+        </section>
+
+        <div>
+          <ul>
+            <li>
+              <button name="slider-one" checked>Первый слайд</button>
+            </li>
+
+            <li>
+              <button name="slider-two">Второй слайд</button>
+            </li>
+
+            <li>
+              <button name="slider-three">Третий слайд</button>
+            </li>
+          </ul>
+        </div>
 
         <section>
           <ul>
@@ -88,6 +167,24 @@
         </section>
 
         <section>
+          <a href="">Доставка</a>
+          <a href="">Гарантия</a>
+          <a href="">Кредит</a>
+  
+          <h2>Гарантия</h2>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </section>
+
+          <section>
+            <a href="">Доставка</a>
+            <a href="">Гарантия</a>
+            <a href="">Кредит</a>
+    
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </section>
+
+        <section>
           <ul>
             <li>
               <img src="img/partner-1.png" alt="Партнер" width="260" height="100">
@@ -106,6 +203,7 @@
             </li>
           </ul>
       </section>
+      
 
   <section>
     <h2>О нас</h2>
@@ -157,5 +255,38 @@
     </a>
   </section>
 </footer>
+
+
+<!-- карта -->
+<div>
+  <h2 class="visually-hidden">Адрес</h2>
+  <img src="img/map.png" alt="г. Москва, ул. Строителей, 15">
+</div>
+
+
+  <!-- меню "написания" -->
+  <section>
+    <h2 class="visually-hidden">Написать нам</h2>
+    <button type="button">Выйти</button>
+    
+    <form action="https://echo.htmlacademy.ru">
+    <label>
+      <span>Ваше имя:</span>
+      <input type="text" name="name" placeholder="Имя Фамилия">
+    </label>
+    
+    <label>
+      <span>Ваш e-mail:</span>
+      <input type="mail" name="mail" placeholder="email@example.com">
+    </label>
+    
+    <label>
+      <span>Текст письма:</span>
+      <textarea name="text" placeholder="В свободной форме"></textarea>
+    </label>
+    
+    <button type="submit">Отправить</button>
+    </form>
+  </section>
   </body>
 </html>

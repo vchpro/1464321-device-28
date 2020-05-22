@@ -9,8 +9,13 @@
       <img src="img/logo-black.svg" alt="Device" width="163" height="35">
       <nav>
         <ul>
-          <li><input type="search" placeholder="Поиск по сайту"></li>
-          <!-- добавили вместо вход "Валентин Петухов" и "Выйти" проверь)) -->
+          <li>
+          <form action="https://echo.htmlacademy.ru">
+            <input type="search" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
+          </form>
+          </li>
+
           <li><a href="">Валентин Петухов</a></li>
           <li><a href="">Выйти</a></li>
           <li><a href="">Сравнить</a></li>
@@ -18,8 +23,36 @@
         </ul>
         
         <ul>
-        <li><a href="">Каталог товаров</a></li>
-        <li><a href="">Доставка</a></li>
+        <li>
+        <a href="catalog.html">Каталог товаров</a>
+        <!-- скрытое меню -->
+        <ul>
+          <li>
+            <a href="">Виртуальная реальность</a>
+          </li>
+
+          <li>
+            <a href="">Моноподы для селфи</a>
+          </li>
+
+          <li>
+            <a href="">Экшн-камеры</a>
+          </li>
+
+          <li>
+            <a href="">Фитнес-браслеты</a>
+          </li>
+
+          <li>
+            <a href="">Умные часы</a>
+          </li>
+
+          <li>
+            <a href="">Квадрокоптер</a>
+          </li>
+        </ul>
+        </li>
+        <li><a href="">Доставка</a></li> 
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
@@ -31,14 +64,45 @@
         <section>
             <h1>Моноподы для селфи</h1>
             <span><a href="index.html">Главная</a></span>
-            <span><a href="">Каталог товаров</a></span>
+            <span><a href="catalog.html">Каталог товаров</a></span>
             <span>Моноподы для селфи</span>
         </section>
       <aside>
-          <!-- Сказали кнопки не делать -->
-          <span>Фильтр:</span>
-          <span>Стоимость</span>
-          <input type="submit" value="Показать">
+          <h2>Фильтр:</h2>
+          <div>
+            <span>Стоимость</span>
+            <div>
+              <button>Меньше</button>
+              <span>от 0</span>
+              <hr>
+              <button>Больше</button>
+              <span>до 5000</span>
+            </div>
+          </div>
+
+          <form action="https://echo.htmlacademy.ru">
+            <legend>Цвет</legend>
+            <input id="filter-black" name="color" type="checkbox" value="Черный" checked> 
+            <label for="filter-black">Черный</label>
+            <input id="filter=white" name="color" type="checkbox" value="Белый">
+            <label for="filter-white">Белый</label>
+            <input id="filter-blue" name="color" type="checkbox" value="Синий" checked>
+            <label for="filter-blue">Синий</label>
+            <input id="filter-red" name="color" type="checkbox" value="Красный" checked>
+            <label for="filter-red">Красный</label>
+            <input id="filter-pink" name="color" type="checkbox" value="Розовый">
+            <label for="filter-pink">Розовый</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <input id="filter-on" name="bluetooth" type="radio" value="Есть" checked> 
+            <label for="filter-on">Есть</label>
+            <input id="filter-off" name="bluetooth" type="radio" value="Нет">
+            <label for="filter-on">Нет</label>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </aside>
       
 
@@ -76,6 +140,10 @@
             <h2>Любительская селфи-палка</h2>
             <span>500руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -84,6 +152,10 @@
             <h2>Профессиональная селфи-палка</h2>
             <span>1 500руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -92,6 +164,10 @@
             <h2>Непотопляемая селфи-палка</h2>
             <span>2 500 руб.</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
 
           <article>
@@ -100,6 +176,10 @@
             <h2>Селфи-палка «Следуй за мной»</h2>
             <span>4 900 руб..</span>
           </a>
+          <div>
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+          </div>
           </article>
       </section>
 
