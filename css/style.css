@@ -52,7 +52,7 @@ a {
 }
 
 .header-search input[placeholder] {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -61,7 +61,7 @@ a {
 }
 
 .nav-act-li a{
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -70,7 +70,7 @@ a {
 }
 
 .nav-catalog a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -81,7 +81,7 @@ a {
 }
 
 .nav-a-li a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -92,7 +92,7 @@ a {
 }
 
 .about h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -102,7 +102,7 @@ a {
 }
 
 .about p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -111,7 +111,7 @@ a {
 }
 
 .contacts h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -121,7 +121,7 @@ a {
 }
 
 .contacts p {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -130,7 +130,7 @@ a {
 }
 
 .about-delivery-services li {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -139,7 +139,7 @@ a {
 }
 
 .standart-a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -151,7 +151,7 @@ a {
 }
 
 .address {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -164,7 +164,7 @@ a {
 }
 
 .footer-a-li a {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -173,7 +173,7 @@ a {
 }
 
 .footer-li-big-a a {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -184,7 +184,7 @@ a {
 }
 
 .main-footer .number {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -193,7 +193,7 @@ a {
 }
 
 .page-name {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
@@ -202,7 +202,7 @@ a {
 }
 
 .bread-crumb {
-    font-family:  "Open Sans";
+    font-family:  "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -212,7 +212,7 @@ a {
 }
 
 .filter label {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -221,7 +221,7 @@ a {
 }
 
 .filter legend {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -231,7 +231,7 @@ a {
 }
 
 .product-name {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -241,7 +241,7 @@ a {
 }
 
 .product-price {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -255,7 +255,7 @@ a {
 }
 
 .page-nav-link {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -266,7 +266,7 @@ a {
 }
 
 .page-nav-number-link a{
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
