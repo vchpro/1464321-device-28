@@ -3,29 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-  </head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head> 
   <body>
-      <header>
+      <header class="main-header">
         <img src="img/logo-black.svg" alt="Device" width="163" height="35">
         <nav>
           <ul>
-            <li>
+            <li class="header-search">
             <form action="https://echo.htmlacademy.ru">
               <input type="search" name="search" placeholder="Поиск по сайту">
               <button type="submit">Найти</button>
             </form>
             </li>
 
-            <li><a href="">Войти</a></li>
-            <li><a href="">Сравнить</a></li>
-            <li><a href="">Корзина</a></li>
+            <li class="nav-act-li header-login"><a href="">Войти</a></li>
+            <li class="nav-act-li header-compare"><a href="">Сравнить</a></li>
+            <li class="nav-act-li header-cart"><a href="">Корзина</a></li>
           </ul>
           
           <ul>
-          <li>
+          <li class="nav-catalog">
           <a href="catalog.html">Каталог товаров</a>
           <!-- скрытое меню -->
-          <ul>
+          <ul class="hide">
             <li>
               <a href="">Виртуальная реальность</a>
             </li>
@@ -51,9 +55,9 @@
             </li>
           </ul>
           </li>
-          <li><a href="">Доставка</a></li> 
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+          <li class="nav-a-li header-delivery"><a href="">Доставка</a></li> 
+          <li class="nav-a-li header-guarantee"><a href="">Гарантия</a></li>
+          <li class="nav-a-li header-contacts"><a href="">Контакты</a></li>
         </ul>
         </nav>
       </header>
@@ -83,7 +87,7 @@
           </ul>
         </section>
         <!-- второй слайд -->
-        <section>
+        <section class="hide">
           <h2 class="visually-hidden">Мотивирующие фитнес-браслеты</h2>
           <img src="img/slider-2.png" alt="Фитнес-браслет" width="500" height="500">
           <p>Худеем правильно!</p>
@@ -94,7 +98,7 @@
         </section>
 
         <!-- третий слайд -->
-        <section>
+        <section class="hide">
           <h2 class="visually-hidden">Квадрокоптер с мощным лазером</h2>
           <img src="img/slider-3.png" alt="Квадрокоптер" width="500" height="500">
           <p>Порхает как бабочка, жалит как пчела!</p>
@@ -130,6 +134,7 @@
         </div>
 
         <section>
+          <h2 class="visually-hidden">Наши товары</h2>
           <ul>
             <li>
               <a href="">Виртуальная реальность</a>
@@ -179,6 +184,7 @@
         </section>
 
         <section>
+          <h2 class="visually-hidden">Наши партнеры</h2>
           <ul>
             <li>
               <img src="img/partner-1.png" alt="Партнер" width="260" height="100">
@@ -199,11 +205,11 @@
       </section>
       
 
-  <section>
+  <section class="about">
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
-    <ul>
+    <ul class="about-delivery-services">
       <li>Деловые линии</li>
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
@@ -211,33 +217,35 @@
     <a href="">Подробнее о нас</a>
   </section>
 
-  <section>
+  <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <img src="img/map.png" alt="Карта" width="560" height="222">
-    <a href="">Напишите нам</a>
+    <a href="" class="standart-a">Напишите нам</a>
   </section>
 </main>
 
-<footer>
+<footer class="main-footer">
   <section>
+    <h2 class="visually-hidden">Навигация</h2>
     <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
     <ul>
-      <li><a href="">Войти</a></li>
-      <li><a href="">Сравнить</a></li>
-      <li><a href="">Корзина</a></li>
+      <li class="footer-a-li"><a href="">Войти</a></li>
+      <li class="footer-a-li"><a href="">Сравнить</a></li>
+      <li class="footer-a-li"><a href="">Корзина</a></li>
     </ul>
 
-    <address>г. Москва, ул. Строителей, 15</address>
+    <address class="address">г. Москва, ул. Строителей, 15</address>
     <ul>
-       <li><a href="">Доставка</a></li>
-       <li><a href="">Гарантия</a></li>
-       <li><a href="">Контакты</a></li>
+       <li class="footer-li-big-a"><a href="">Доставка</a></li>
+       <li class="footer-li-big-a"><a href="">Гарантия</a></li>
+       <li class="footer-li-big-a"><a href="">Контакты</a></li>
   </ul>
-  <span>Тел.: +7 (495) 495-95-95</span>
+  <span class="number">Тел.: +7 (495) 495-95-95</span>
   
   </section>
   <section>
+    <h2 class="visually-hidden">Соц-сети</h2>
     <ul>
       <li><a href=""><span>Facebook</span></a></li>
       <li><a href=""><span>Instagram</span></a></li>
@@ -252,14 +260,14 @@
 
 
 <!-- карта -->
-<section> 
+<section class="hide"> 
   <h2 class="visually-hidden">Адрес</h2>
   <img src="img/map.png" alt="г. Москва, ул. Строителей, 15">
 </section>
 
 
   <!-- меню "написания" -->
-  <section>
+  <section class="hide">
     <h2 class="visually-hidden">Написать нам</h2>
     <button type="button">Закрыть</button>
     
