@@ -227,7 +227,7 @@ a {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.1em;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .product-name {
@@ -237,7 +237,7 @@ a {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .product-price {
@@ -247,7 +247,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .sort {
@@ -273,7 +273,7 @@ a {
     line-height: 20px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .page-nav-number-link-next a{
