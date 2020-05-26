@@ -10,36 +10,42 @@
     --special-yellow-dark: #F0C52E;
 }
 
-ul {
+.nav-ul, .about-delivery-services, .footer-acts, .main-socialy {
     list-style: none;
 }
 
 a {
-    text-decoration :none;
+    text-decoration: none;
 }
 
 
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy Light'), local('Gilroy-Light'), url('http://hb.bizmrg.com/fonts/gilroy/300.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/gilroy/300.woff') format('woff');
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('http://hb.bizmrg.com/fonts/gilroy/800.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/gilroy/800.woff') format('woff');
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Gilroy Light'), local('Open-Sans'), url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	padding: 0;
+	border: 0;
+	height: 1px; 
+	width: 1px; 
 	overflow: hidden;
 }
 
@@ -48,7 +54,7 @@ a {
 }
 
 .main-header {
-    background: var(--special-yellow);
+    background-color: var(--special-yellow);
 }
 
 .header-search input[placeholder] {
@@ -60,7 +66,7 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-act-li a{
+.nav-goto a{
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -138,7 +144,7 @@ a {
     color: var(--basic-black);
 }
 
-.standart-a {
+.standart-act {
     font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
