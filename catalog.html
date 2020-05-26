@@ -12,17 +12,18 @@
     <header class="main-header">
       <img src="img/logo-black.svg" alt="Device" width="163" height="35">
       <nav class="main-nav">
-        <ul class="nav-ul">
+        <ul class="nav-list">
           <li class="header-search">
           <form action="https://echo.htmlacademy.ru">
             <input type="search" name="search" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
+            <button type="submit" class="search-button hide">Найти</button>
           </form>
           </li>
 
-          <li class="nav-act-li header-login"><a href="">Валентив Петухов</a></li>
-          <li class="nav-act-li header-compare"><a href="">Сравнить</a></li>
-          <li class="nav-act-li header-cart"><a href="">Корзина</a></li>
+          <li class="nav-buttons header-login"><a href="">Валентив Петухов</a></li>
+          <li class="nav-buttons header-logout"><a href="">Выйти</a></li>
+          <li class="nav-buttons header-compare"><a href="">Сравнить</a></li>
+          <li class="nav-buttons header-cart"><a href="">Корзина</a></li>
         </ul>
         
         <ul>
@@ -55,9 +56,9 @@
           </li>
         </ul>
         </li>
-        <li class="nav-goto header-delivery"><a href="">Доставка</a></li> 
-        <li class="nav-goto header-guarantee"><a href="">Гарантия</a></li>
-        <li class="nav-goto header-contacts"><a href="">Контакты</a></li>
+        <li class="nav-item header-delivery"><a href="">Доставка</a></li> 
+        <li class="nav-item header-guarantee"><a href="">Гарантия</a></li>
+        <li class="nav-item header-contacts"><a href="">Контакты</a></li>
       </ul>
       </nav>
     </header>
@@ -107,7 +108,7 @@
             <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет">
             <label for="filter-bluetooth-on">Нет</label>
           </fieldset>
-          <button type="submit" class="standart-a">Показать</button>
+          <button type="submit" class="standart-btn">Показать</button>
         </form>
       </aside>
       
@@ -216,6 +217,7 @@
     <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
     <ul class="footer-act">
       <li class="footer-a-li"><a href="">Валентин Петухов</a></li>
+      <li class="footer-a-li"><a href="">Выйти</a></li>
       <li class="footer-a-li"><a href="">Сравнить</a></li>
       <li class="footer-a-li"><a href="">Корзина</a></li>
     </ul>

@@ -10,7 +10,7 @@
     --special-yellow-dark: #F0C52E;
 }
 
-.nav-ul, .about-delivery-services, .footer-acts, .main-socialy {
+.nav-list, .about-delivery-services, .footer-acts, .main-socialy {
     list-style: none;
 }
 
@@ -58,7 +58,7 @@ a {
 }
 
 .header-search input[placeholder] {
-    font-family: "Open Sans", "Arial", sans-serif;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -66,7 +66,7 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-goto a{
+.nav-item a{
     font-family: "Open Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -144,7 +144,7 @@ a {
     color: var(--basic-black);
 }
 
-.standart-act {
+.standart-btn {
     font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -284,4 +284,23 @@ a {
 
 .page-nav-number-link-next a{
     opacity: 0.3;
+}
+
+.nav-buttons a{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+
+.search-button {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--basic-black);
 }
