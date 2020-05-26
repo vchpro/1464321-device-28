@@ -10,33 +10,50 @@
     --special-yellow-dark: #F0C52E;
 }
 
-.nav-list, .about-delivery-services, .footer-acts, .main-socialy {
-    list-style: none;
-}
 
 a {
     text-decoration: none;
 }
 
+body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+}
 
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy Light'), local('Gilroy-Light'), url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
+    src: url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
+    src: url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: local('Gilroy Light'), local('Open-Sans'), url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
+    src: url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.about-delivery-services {
+    list-style: none;
+}
+
+.footer-acts {
+    list-style: none;
+}
+
+.main-socialy {
+    list-style: none;
 }
 
 .visually-hidden {
@@ -58,18 +75,14 @@ a {
 }
 
 .header-search input[placeholder] {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
+    font-family: inherit;
+    font-weight: inherit;
     font-size: 15px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.3);
 }
 
 .nav-item a{
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-black);
@@ -108,9 +121,6 @@ a {
 }
 
 .about p {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 15px;
     line-height: 28px;
     color: var(--basic-black);
@@ -127,9 +137,6 @@ a {
 }
 
 .contacts p {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 15px;
     line-height: 28px;
     color: var(--basic-black);
@@ -157,9 +164,6 @@ a {
 }
 
 .address {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-white);
@@ -169,16 +173,13 @@ a {
     background: var(--basic-dark);
 }
 
-.footer-a-li a {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
+.footer-nav-btn a {
     font-size: 15px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-li-big-a a {
+.footer-nav-item a {
     font-family: "Gilroy", "Arial", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -190,9 +191,6 @@ a {
 }
 
 .main-footer .number {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-white);
@@ -208,9 +206,6 @@ a {
 }
 
 .bread-crumb {
-    font-family:  "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
@@ -218,9 +213,6 @@ a {
 }
 
 .filter label {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: var(--basic-black);
@@ -286,19 +278,15 @@ a {
     opacity: 0.3;
 }
 
-.nav-buttons a{
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
+.nav-btn a{
     font-size: 15px;
     line-height: 20px;
     color: var(--basic-black);
 }
 
 .search-button {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
+    font-family: inherit;
+    font-weight: inherit;
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
