@@ -1,0 +1,294 @@
+:root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white: #FFFFFF;
+    --basic-grey: #464646;
+    --basic-half-gray: #7E7E7E;
+    --basic-grey-light: #E5E5E5;
+    --special-yellow: #F7E296;
+    --special-green: #91C92F;
+    --special-yellow-dark: #F0C52E;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.about-delivery-services {
+    list-style: none;
+}
+
+.footer-acts {
+    list-style: none;
+}
+
+.main-socialy {
+    list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.main-header {
+    background-color: var(--special-yellow);
+}
+
+.header-search input[placeholder] {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-item a{
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+
+.nav-catalog a {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.nav-a-li a {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.about h2 {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+    color: var(--basic-black);
+}
+
+.about p {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--basic-black);
+}
+
+.contacts h2 {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+    color: var(--basic-black);
+}
+
+.contacts p {
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--basic-black);
+}
+
+.about-delivery-services li {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--basic-black);
+}
+
+.standart-btn {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    background: var(--special-yellow-dark);
+}
+
+.address {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.main-footer {
+    background: var(--basic-dark);
+}
+
+.footer-nav-btn a {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-nav-item a {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.main-footer .number {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-white);
+}
+
+.page-name {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    color: var(--basic-black);
+}
+
+.bread-crumb {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.filter label {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--basic-black);
+}
+
+.filter legend {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: var(--basic-black);
+}
+
+.product-name {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: var(--basic-black);
+}
+
+.product-price {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: var(--basic-black);
+}
+
+.sort {
+    background-color: var(--basic-grey-light);
+}
+
+.page-nav-link {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.page-nav-number-link a{
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.page-nav-number-link-next a{
+    opacity: 0.3;
+}
+
+.nav-btn a{
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--basic-black);
+}
+
+.search-button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
