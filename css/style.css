@@ -24,20 +24,20 @@ body {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('fonts/gilroylight.woff2') format('woff2'), url('fonts/gilroylight.woff') format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url('fonts/gilroyextrabold.woff2') format('woff2'), url('fonts/gilroyextrabold.woff') format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/opensans.woff2') format('woff2'), url('fonts/opensans.woff') format('woff');
+    src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -144,6 +144,7 @@ body {
     text-transform: uppercase;
     color: var(--basic-black);
     background: var(--special-yellow-dark);
+    border: 0;
 }
 
 .address {
@@ -255,7 +256,7 @@ body {
 }
 
 .promo-products a{
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -264,15 +265,15 @@ body {
 }
 
 .about-slider .h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
 }
 
-.main-slider .phrase {
-    font-family: "Gilroy";
+.main-slider .slider-name {
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -282,25 +283,23 @@ body {
     line-height: 28px;
 }
 
-
-.feature .characteristic {
-    font-family: "Gilroy";
+.feature {
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
+    letter-spacing: 0.1em;
+}
+.feature .characteristic {
     font-size: 36px;
     line-height: 42px;
-    letter-spacing: 0.1em;
 }
 
 .feature .characteristic-name {
-    font-family: "Gilroy";
-    font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    letter-spacing: 0.1em;
 }
 
 .filter .h2 {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -308,7 +307,7 @@ body {
 }
 
 .sort .name {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -328,7 +327,7 @@ body {
 }
 
 .filter-price-legend {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
@@ -336,8 +335,20 @@ body {
 }
 
 .filter-price {
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;  
+}
+
+.about-btn {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    background: var(--special-yellow-dark);
+    border: 0;
 }
