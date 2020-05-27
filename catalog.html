@@ -70,20 +70,20 @@
             <span class="bread-crumb"><a href="catalog.html">Каталог товаров</a></span>
             <span class="bread-crumb">Моноподы для селфи</span>
         </section>
-      <aside class="sort">
+      <aside class="sort-main">
 
           <form action="https://echo.htmlacademy.ru" class="filter">
-            <h2>Фильтр:</h2>
+            <h2 class="h2">Фильтр:</h2>
             <fieldset>
-              <legend>Стоимость</legend>
+              <legend class="filter-price-legend">Стоимость</legend>
               <div>
                 <button type="button">Меньше</button>
                 <input type="number" name="min" min="0" readonly>
-                <span>от 0</span>
+                <span class="filter-price">от 0</span>
                 <div></div>
                 <button type="button">Больше</button>
                 <input type="number" name="max" max="5000" readonly>
-                <span>до 5000</span>
+                <span class="filter-price">до 5000</span>
               </div>
             </fieldset>
             <fieldset class="filter-color">
@@ -107,36 +107,36 @@
             <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет">
             <label for="filter-bluetooth-on">Нет</label>
           </fieldset>
-          <button type="submit" class="standart-btn">Показать</button>
+          <button type="submit" class="btn">Показать</button>
         </form>
       </aside>
       
 
-      <section>
+      <section class="sort">
         <h2 class="visually-hidden">Сортировка</h2>
         <div>
-          <span>Сортировка</span>
+          <span class="name">Сортировка</span>
           <ul>
           <li>
-            <a href="">По цене</a>
+            <a href="" class="sort-by sort-by-active">По цене</a>
           </li>
   
           <li>
-          <a href="">По типу</a>
+          <a href="" class="sort-by">По типу</a>
         </li>
           
         <li>
-          <a href="">По популярности</a>
+          <a href="" class="sort-by">По популярности</a>
         </li>
         </ul>
 
         <ul>
           <li>
-            <a href="">Вверх</a>
+            <a href="" class="visually-hidden">Вверх</a>
           </li>
 
           <li>
-            <a href="">Вниз</a>
+            <a href="" class="visually-hidden">Вниз</a>
           </li>
         </ul>
       </div>
@@ -242,6 +242,7 @@
     </a>
   </section>
 </footer>
+
 
 
 <!-- карта -->
