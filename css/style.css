@@ -74,10 +74,17 @@ body {
     list-style: none;
     display: flex;
     padding: 0 0;
-    position: absolute;
-    right: 127px;
+    margin-right: 140px;
 }
 
+.footer-act-container 
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 16px;
+    padding: 0 0;
+    padding-top: 46px;
+}
 .footer-act-compare {
     margin-left: 40px;
 }
@@ -444,9 +451,9 @@ body {
     width: 560px;
 }
 .footer-logo {
-    position: relative;
-    left: 140px;
-    top: 64px;
+    display: block;
+    margin-left: 140px;
+    padding-top: 2px;
 }
 
 .bread-crumb-container {
@@ -524,14 +531,18 @@ body {
     display: flex;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    margin-top: 100px;
+    margin-top: 40px;
     width: 805px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.main-footer-container {
+    margin: 0 auto;
+}
+
 .address {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 140px;
     float: left;
 }
@@ -548,8 +559,4 @@ body {
     padding: 0 0;
     position: absolute;
     right: 141px;
-}
-
-.footer-content {
-    margin: 0 auto;
 }
