@@ -9,9 +9,9 @@
   </head>
   <body>
     <header class="main-header">
-    <a href="index.html">
-      <img src="img/logo-black.svg" alt="Device" width="163" height="35">
-    </a> 
+      <a href="" class="main-logo">
+        <img src="img/logo-black.svg" alt="Device" width="163" height="35">
+      </a> 
       <nav class="main-nav">
         <ul class="nav-list">
           <li class="header-search">
@@ -26,7 +26,7 @@
           <li class="nav-btn header-cart"><a href="">Корзина</a></li>
         </ul>
         
-        <ul>
+        <ul class="nav-container">
         <li class="nav-catalog">
         <a href="catalog.html">Каталог товаров</a>
         <!-- скрытое меню -->
@@ -67,14 +67,20 @@
 
         <section class="bread-crumb-container">
             <h1 class="page-name">Моноподы для селфи</h1>
+            <div class="bread-crumbs">
             <span class="bread-crumb"><a href="index.html">Главная</a></span>
-            <span class="bread-crumb"><a href="catalog.html">Каталог товаров</a></span>
-            <span class="bread-crumb">Моноподы для селфи</span>
+            <span class="bread-crumb bread-crumb-2"><a href="catalog.html">Каталог товаров</a></span>
+            <span class="bread-crumb bread-crumb-3">Моноподы для селфи</span>
+          </div>
         </section>
-      <aside class="sort-main">
 
+        <div class="product-filter-container">
+          <div class="filter-name-container">
+            <h2 class="filter-name">Фильтр:</h2>
+          </div>
+
+      <aside class="sort-main">
           <form action="https://echo.htmlacademy.ru" class="filter">
-            <h2 class="h2">Фильтр:</h2>
             <fieldset>
               <legend class="filter-price-legend">Стоимость</legend>
               <div>
@@ -89,24 +95,42 @@
             </fieldset>
             <fieldset class="filter-color">
             <legend>Цвет</legend>
+            <ul>
+            <li>
             <input id="filter-black" name="color" type="checkbox" value="Черный" checked> 
             <label for="filter-black">Черный</label>
+            </li>
+          <li>
             <input id="filter-white" name="color" type="checkbox" value="Белый">
             <label for="filter-white">Белый</label>
+          </li>
+          <li>
             <input id="filter-blue" name="color" type="checkbox" value="Синий" checked>
             <label for="filter-blue">Синий</label>
+          </li>
+          <li>
             <input id="filter-red" name="color" type="checkbox" value="Красный" checked>
             <label for="filter-red">Красный</label>
+          </li>
+          <li>
             <input id="filter-pink" name="color" type="checkbox" value="Розовый">
             <label for="filter-pink">Розовый</label>
+          </li>
+        </ul>
           </fieldset>
 
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
+            <ul>
+            <li>
             <input id="filter-bluetooth-on" name="bluetooth" type="radio" value="Есть" checked> 
             <label for="filter-bluetooth-on">Есть</label>
+            </li>
+          <li>
             <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет">
             <label for="filter-bluetooth-on">Нет</label>
+          </li>
+        </ul>
           </fieldset>
           <button type="submit" class="btn">Показать</button>
         </form>
@@ -117,7 +141,7 @@
         <h2 class="visually-hidden">Сортировка</h2>
         <div>
           <span class="name">Сортировка</span>
-          <ul>
+          <!-- <ul>
           <li>
             <a href="" class="sort-by sort-by-active">По цене</a>
           </li>
@@ -139,9 +163,13 @@
           <li>
             <a href="" class="visually-hidden">Вниз</a>
           </li>
-        </ul>
+        </ul> -->
       </div>
 
+      </section>
+
+      <section class="products">
+        <h2 class="visually-hidden">Наши товары</h2>
           <article class="product">
           <a href="">
             <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -189,7 +217,8 @@
             <a href="">Добавить к сравнению</a>
           </div>
           </article>
-      </section>
+        </section>
+    </div>
 
       <section class="page-nav">
         <h2 class="visually-hidden">Навигация между страницами товаров</h2>
@@ -214,22 +243,24 @@
 <footer class="main-footer">
   <section>
     <h2 class="visually-hidden">Навигация</h2>
+    <div class="footer-logo">
     <a href="index.html">
     <img src="img/logo-yellow.svg" alt="Device" width="163" height="35">
   </a>
+  </div>
     <ul class="footer-act">
-      <li class="footer-nav-btn"><a href="">Войти</a></li>
-      <li class="footer-nav-btn"><a href="">Сравнить</a></li>
-      <li class="footer-nav-btn"><a href="">Корзина</a></li>
+      <li class="footer-nav-btn footer-act-login"><a href="">Войти</a></li>
+      <li class="footer-nav-btn footer-act-compare"><a href="">Сравнить</a></li>
+      <li class="footer-nav-btn footer-act-cart"><a href="">Корзина</a></li>
     </ul>
 
     <address class="address">г. Москва, ул. Строителей, 15</address>
-    <ul>
-       <li class="footer-nav-item"><a href="">Доставка</a></li>
-       <li class="footer-nav-item"><a href="">Гарантия</a></li>
-       <li class="footer-nav-item"><a href="">Контакты</a></li>
+    <ul class="footer-items">
+       <li class="footer-nav-item footer-nav-delivery"><a href="">Доставка</a></li>
+       <li class="footer-nav-item footer-nav-guarantee"><a href="">Гарантия</a></li>
+       <li class="footer-nav-item footer-nav-contacts"><a href="">Контакты</a></li>
+       <li><a href="tel:+74954959595" class="number">Тел.: +7 (495) 495-95-95</a></li>
   </ul>
-  <a href="tel:+74954959595" class="number">Тел.: +7 (495) 495-95-95</a>
   
   </section>
   <section>
@@ -240,7 +271,7 @@
       <li><a href=""><span class="visually-hidden">Twitter</span></a></li>
     </ul>
 
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">
       <img src="img/htmlacademy.svg" alt="HtmlAcademy" width="27" height="34">
     </a>
   </section>
