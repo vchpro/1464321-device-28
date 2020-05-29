@@ -548,3 +548,7 @@ body {
     position: absolute;
     right: 141px;
 }
+
+.footer-content {
+    margin: 0 auto;
+}
