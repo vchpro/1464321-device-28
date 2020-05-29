@@ -225,6 +225,7 @@ body {
 .main-footer {
     background: var(--basic-dark);
     height: 324px;
+    width: 100%;
 }
 
 .footer-nav-btn a {
