@@ -452,7 +452,6 @@ body {
 }
 .footer-logo {
     display: block;
-    margin-left: 140px;
     padding-top: 2px;
 }
 
@@ -539,11 +538,11 @@ body {
 
 .main-footer-container {
     margin: 0 auto;
+    width: 1160px;
 }
 
 .address {
     margin-top: 40px;
-    margin-left: 140px;
     float: left;
 }
 
@@ -553,10 +552,20 @@ body {
 
 .footer-nav-contacts {
     margin-left: 36px;
+
 }
 
-.htmlacademy {
+.htmlacademy-container {
     padding: 0 0;
-    position: absolute;
-    right: 141px;
+    display: flex;
+    justify-content: flex-end;
+}
+.htmlacademy {
+margin-right: 70px;
+}
+
+.social-footer-container {
+    margin: 0 auto;
+    width: 1160px;
+    margin-top: 67px;
 }
