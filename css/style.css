@@ -18,7 +18,6 @@ a {
 }
 
 body {
-    margin-top: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -63,12 +62,14 @@ body {
     list-style: none;
     display: flex;
     padding: 0;
+    margin-left: 61px;
 }
 
 .nav-container {
     list-style: none;
     display: flex;
     padding: 0;
+    margin-left: 61px;
 }
 
 
@@ -93,15 +94,12 @@ body {
 
 .main-header {
     background-color: var(--special-yellow);
-    height: 300px;
+    min-height: 300px;
     width: 1160px;
     margin: 0 auto;
 }
 
 
-.header-search {
-    margin-left: 61px;
-}
 
 .header-login {
    margin-left: 398px; 
@@ -137,8 +135,6 @@ body {
 
 .main-logo {
     margin-left: 60px;
-    position: relative;
-    top: -20px;
 }
 
 .header-search input[placeholder] {
@@ -151,9 +147,6 @@ body {
     margin-left: 314px;
 }
 
-.nav-catalog {
-    margin-left: 60px;
-}
 
 .header-guarantee {
     margin-left: 38px;
@@ -255,15 +248,9 @@ body {
     color: var(--basic-white);
     grid-column: 3/3;
     margin-top: 40px;
-    padding-left: 90px;
+    text-align: right;
 }
 
-.main-footer .number-2 {
-    color: var(--basic-white);
-    grid-column: 3/3;
-    margin-top: 40px;
-    padding-left: 250px;
-}
 
 .page-name {
     font-family: "Gilroy", "Arial", sans-serif;
@@ -473,6 +460,7 @@ body {
     margin: 0 auto;
     width: 1160px;
     padding-left: 60px;
+    box-sizing: border-box;
 }
 
 .bread-crumbs {
@@ -485,10 +473,6 @@ body {
     margin-top: 70px;
     grid-row: 1/1;
     grid-column: 2/2;
-}
-
-.filter {
-    margin-left: 200px;
 }
 
 .sort-main {
@@ -520,8 +504,10 @@ body {
     height: 70px;
 }
 
-/* Что не так тут?! Почему фон не с начала? */
+
 .filter-name {
+    padding: 0;
+    margin: 0;
     padding-top: 25px;
     padding-left: 200px;
 }
@@ -541,15 +527,7 @@ body {
     margin: 0 auto;
     width: 1160px;
     display: grid;
-    grid-template-columns: 240px 1fr 260px;
-}
-
-.main-footer-container-2 {
-    padding-top: 46px;
-    margin: 0 auto;
-    width: 1160px;
-    display: grid;
-    grid-template-columns: 240px 1fr 420px;
+    grid-template-columns: 240px 1fr max-content;
 }
 
 .address {
@@ -562,7 +540,6 @@ body {
 
 .footer-nav-contacts {
     margin-left: 36px;
-
 }
 
 .htmlacademy-container {
@@ -571,7 +548,7 @@ body {
     justify-content: flex-end;
 }
 .htmlacademy {
-margin-right: 70px;
+    margin-right: 70px;
 }
 
 .social-footer-container {
@@ -590,17 +567,17 @@ margin-right: 70px;
      margin-left: 24px;
  }
 
- .footer-act-compare-2 {
-    margin-left: 42px;
-}
-
-.footer-act-cart-2 {
-    margin-left: 43px;
-} 
-
 .main-catalog-container {
     margin-top: 50px;
     display: grid;
     max-width: 1160px;
     margin: 0 auto;
 }
+
+.filter {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+
+/* пока такой оставлю отступ, в декоративных элементах исправлю */
