@@ -9,6 +9,7 @@
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
     --special-low-gray: rgba(0, 0, 0, 0.3);
+    --special-for-filter-name: #DCDCDC;
 }
 
 
@@ -61,20 +62,20 @@ body {
 .nav-list {
     list-style: none;
     display: flex;
-    padding: 0 0;
+    padding: 0;
 }
 
 .nav-container {
     list-style: none;
     display: flex;
-    padding: 0 0;
+    padding: 0;
 }
 
 
 .footer-act {
     list-style: none;
     display: flex;
-    padding: 0 0;
+    padding: 0;
     grid-column: 3/3;
 }
 
@@ -253,14 +254,14 @@ body {
 .main-footer .number {
     color: var(--basic-white);
     grid-column: 3/3;
-    padding-top: 46px;
+    margin-top: 40px;
     padding-left: 90px;
 }
 
 .main-footer .number-2 {
     color: var(--basic-white);
     grid-column: 3/3;
-    padding-top: 46px;
+    margin-top: 40px;
     padding-left: 250px;
 }
 
@@ -276,6 +277,10 @@ body {
     line-height: 19px;
     opacity: 0.3;
     color: var(--basic-black);
+}
+
+.bread-crumb:not(:first-child) {
+    margin-left: 16px;
 }
 
 .filter label {
@@ -311,7 +316,6 @@ body {
 
 .sort-main {
     background-color: var(--basic-grey-light);
-    height: 100%;
 }
 
 .page-nav-link {
@@ -475,18 +479,7 @@ body {
     display: flex;
 }
 
-.bread-crumb-2 {
-    margin-left: 16px;
-}
 
-.bread-crumb-3 {
-    margin-left: 20px;
-}
-
-.product-filter-container {
-    display: grid;
-    grid-template-columns: 468px auto;
-}
 
 .sort {
     margin-top: 70px;
@@ -512,9 +505,9 @@ body {
 .products {
     grid-row: 2/2;
     grid-column: 2/2;
-    margin-left: 72px;
     display: flex;
     flex-wrap: wrap;
+    width: 800px;
 }
 
 .product {
@@ -522,17 +515,15 @@ body {
 }
 
 .filter-name-container {
-    grid-row: 1/1;
-    grid-column: 1/2;
-    background: #DCDCDC;
+    background: var(--special-for-filter-name);
     width: 468px;
     height: 70px;
-    margin-top: 50px;
 }
 
+/* Что не так тут?! Почему фон не с начала? */
 .filter-name {
-    margin-top: 25px;
-    margin-left: 200px;
+    padding-top: 25px;
+    padding-left: 200px;
 }
 
 .footer-items {
@@ -563,7 +554,6 @@ body {
 
 .address {
     margin-top: 40px;
-    float: left;
 }
 
 .footer-nav-guarantee {
@@ -576,7 +566,7 @@ body {
 }
 
 .htmlacademy-container {
-    padding: 0 0;
+    padding: 0;
     display: flex;
     justify-content: flex-end;
 }
@@ -608,4 +598,9 @@ margin-right: 70px;
     margin-left: 43px;
 } 
 
-
+.main-catalog-container {
+    margin-top: 50px;
+    display: grid;
+    max-width: 1160px;
+    margin: 0 auto;
+}
