@@ -471,8 +471,6 @@ body {
     display: flex;
 }
 
-
-
 .sort {
     margin-top: 70px;
     grid-row: 1/1;
@@ -579,4 +577,57 @@ body {
 
 }
 
-/* пока такой оставлю отступ, в декоративных элементах исправлю */
+.main-slide {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.main-slide-photo {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.main-slide .slider-name {
+    padding-top: 52px;
+    margin: 0;
+}
+
+.main-slide .slider-text {
+    padding-top: 30px;
+}
+
+.main-slide .btn {
+    display: block;
+    width: 220px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-slide .features {
+    margin-top: 60px;
+    display: flex;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin: 0 auto;
+    width: 444px;
+    padding-top: 60px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main-slide {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main-slide  .about-product {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    text-align: center;
+    width: 492px;
+    margin-left: 127px;
+}
+
+.main-slider {
+    list-style: none;
+}
