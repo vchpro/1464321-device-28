@@ -351,12 +351,54 @@ body {
     color: var(--basic-black);
 }
 
+.promo-products {
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 116px;
+}
+
+.promo-products-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.promo-products-container li {
+    width: 160px;
+}
+
 .about-slider .h2 {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
+}
+
+.about-slider {
+    display: grid;
+    grid-template-columns: auto 460px auto;
+    /* на третьей строке будет человечик-курьер */
+    width: 1440px;
+    margin: 0 auto;
+    background: var(--basic-grey-light);
+    margin-top: 184px;
+}
+
+.about-slider h2 {
+    margin: 0;
+}
+
+.about-slider .button-container {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 160px;
+    margin-left: auto;
+    margin-right: 264px;
+}
+
+.button-container .about-btn:not(:first-child) {
+    margin-top: 30px;
 }
 
 .main-slider .slider-name {
@@ -446,6 +488,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-top: 147px;
 }
 
 .about {
@@ -630,4 +673,16 @@ body {
 
 .main-slider {
     list-style: none;
+}
+
+.partners {
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.partners ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
