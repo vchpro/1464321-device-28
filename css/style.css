@@ -304,6 +304,7 @@ body {
 
 .sort-main {
     background-color: var(--basic-grey-light);
+    width: 328px;
 }
 
 .page-nav-link {
@@ -501,7 +502,6 @@ body {
 
 .filter-name-container {
     background: var(--special-for-filter-name);
-    width: 468px;
     height: 70px;
 }
 
@@ -580,7 +580,7 @@ body {
 .filter {
     display: block;
     margin: 0 auto;
-    width: 328px;
+
 }
 
 /* пока такой оставлю отступ, в декоративных элементах исправлю */
