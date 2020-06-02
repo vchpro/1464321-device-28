@@ -334,7 +334,7 @@ body {
 
 .page-nav {
     background-color: #EBEBEB;
-    width: 95%;
+    flex-grow: 1;
     height: 70px;
     display: flex;
     margin-left: 40px;
