@@ -316,7 +316,7 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--basic-black);
-    margin: auto 0;
+    padding-top: 25px;
 }
 
 .page-nav-number-link a{
@@ -342,7 +342,7 @@ body {
 }
 
 .page-nav-items {
-    margin: auto auto;
+    margin: auto;
     display: flex;
     list-style: none;
     width: 85px;
@@ -403,10 +403,10 @@ body {
 }
 
 .about-slider {
-    display: grid;
-    grid-template-columns: auto 460px auto;
-    /* на третьей строке будет человечик-курьер */
-    width: 1440px;
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1160px;
+    min-height: 288px;
     margin: 0 auto;
     background: var(--basic-grey-light);
     margin-top: 184px;
@@ -417,10 +417,7 @@ body {
 }
 
 .about-slider .button-container {
-    grid-column: 1/1;
-    grid-row: 1/1;
     width: 160px;
-    margin-left: auto;
     margin-right: 264px;
 }
 
@@ -539,13 +536,12 @@ body {
     grid-row: 1/1;
     grid-column: 2/2;
     background: var(--basic-grey-light);
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sort .sort-by-container {
     display: flex;
-    grid-column: 2/2;
     list-style: none;
     color: var(--basic-black);
     margin: auto 0;
@@ -668,7 +664,7 @@ body {
     margin-top: 50px;
     display: grid;
     max-width: 1160px;
-    grid-template-rows: auto 1214px;
+    grid-template-rows: auto auto;
     margin: 0 auto;
 }
 
@@ -680,7 +676,7 @@ body {
 
 .main-slide {
     margin: 0 auto;
-    width: max-content;
+    width: 989px;
 }
 
 .main-slide-photo {
@@ -724,7 +720,6 @@ body {
 .main-slide  .about-product {
     grid-column: 2/2;
     grid-row: 1/1;
-    text-align: center;
     width: 492px;
     margin-left: 127px;
 }
