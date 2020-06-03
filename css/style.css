@@ -253,9 +253,26 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--basic-black);
-    background: var(--special-yellow-dark);
     border: none;
 }
+
+.btn::after {
+    display: block;
+    width: 220px;
+    height: 8px;
+    content: "";
+    background: var(--special-yellow-dark);
+    position: relative;
+    bottom: 15px;
+    z-index: -1;
+}
+
+.btn:hover:after {
+    width: 220px;
+    height: 40px;
+    bottom: 30px;
+}
+
 
 .address {
     color: var(--basic-white);
