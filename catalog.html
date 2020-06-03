@@ -29,7 +29,7 @@
         
         <ul class="nav-container">
         <li class="nav-catalog">
-        <a href="catalog.html">Каталог товаров</a>
+        <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
         <!-- скрытое меню -->
         <ul class="hide">
           <li>
@@ -82,7 +82,7 @@
           </div>
 
           <form action="https://echo.htmlacademy.ru" class="filter">
-            <fieldset>
+            <fieldset class="hide">
               <legend class="filter-price-legend">Стоимость</legend>
               <div>
                 <button type="button">Меньше</button>
@@ -96,40 +96,40 @@
             </fieldset>
             <fieldset class="filter-color">
             <legend>Цвет</legend>
-            <ul>
+            <ul class="filter-ul">
             <li>
-            <input id="filter-black" name="color" type="checkbox" value="Черный" checked> 
-            <label for="filter-black">Черный</label>
+            <input id="filter-black" name="color" type="checkbox" value="Черный" checked class="visually-hidden"> 
+            <label for="filter-black" class="label-for-checkbox checked-filter">Черный</label>
             </li>
           <li>
-            <input id="filter-white" name="color" type="checkbox" value="Белый">
-            <label for="filter-white">Белый</label>
+            <input id="filter-white" name="color" type="checkbox" value="Белый" class="visually-hidden">
+            <label for="filter-white" class="label-for-checkbox">Белый</label>
           </li>
           <li>
-            <input id="filter-blue" name="color" type="checkbox" value="Синий" checked>
-            <label for="filter-blue">Синий</label>
+            <input id="filter-blue" name="color" type="checkbox" value="Синий" checked class="visually-hidden">
+            <label for="filter-blue" class="label-for-checkbox checked-filter">Синий</label>
           </li>
           <li>
-            <input id="filter-red" name="color" type="checkbox" value="Красный" checked>
-            <label for="filter-red">Красный</label>
+            <input id="filter-red" name="color" type="checkbox" value="Красный" checked class="visually-hidden">
+            <label for="filter-red" class="label-for-checkbox checked-filter">Красный</label>
           </li>
           <li>
-            <input id="filter-pink" name="color" type="checkbox" value="Розовый">
-            <label for="filter-pink">Розовый</label>
+            <input id="filter-pink" name="color" type="checkbox" value="Розовый" class="visually-hidden">
+            <label for="filter-pink" class="label-for-checkbox">Розовый</label>
           </li>
         </ul>
           </fieldset>
 
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
-            <ul>
+            <ul class="bluetooth-filter-ul">
             <li>
-            <input id="filter-bluetooth-on" name="bluetooth" type="radio" value="Есть" checked> 
-            <label for="filter-bluetooth-on">Есть</label>
+            <input id="filter-bluetooth-on" name="bluetooth" type="radio" value="Есть" checked class="visually-hidden"> 
+            <label for="filter-bluetooth-on" class="radio-button checked-radio">Есть</label>
             </li>
           <li>
-            <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет">
-            <label for="filter-bluetooth-on">Нет</label>
+            <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет" class="visually-hidden">
+            <label for="filter-bluetooth-on" class="radio-button">Нет</label>
           </li>
         </ul>
           </fieldset>
@@ -253,7 +253,7 @@
   </div>
 
   <ul class="footer-act">
-    <li class="footer-nav-btn footer-act-login-name"><a href="">Валентин Петухов</a></li>
+    <li class="footer-nav-btn footer-act-login"><a href="">Валентин Петухов</a></li>
     <li class="footer-nav-btn footer-act-logout"><a href="">Выйти</a></li>
     <li class="footer-nav-btn footer-act-compare"><a href="">Сравнить</a></li>
     <li class="footer-nav-btn footer-act-cart"><a href="">Корзина</a></li>
@@ -271,9 +271,9 @@
  <section class="social-footer-container">
   <h2 class="visually-hidden">Соц-сети</h2>
   <ul class="main-socialy">
-    <li><a href=""><span class="visually-hidden">Facebook</span></a></li>
-    <li><a href=""><span class="visually-hidden">Instagram</span></a></li>
-    <li><a href=""><span class="visually-hidden">Twitter</span></a></li>
+    <li><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+    <li><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+    <li><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
   </ul>
 
   <div class="htmlacademy-container">
@@ -286,37 +286,5 @@
 </footer>
 
 
-
-<!-- карта -->
-<section class="hide"> 
-  <h2 class="visually-hidden">Адрес</h2>
-  <img src="img/map.png" alt="г. Москва, ул. Строителей, 15">
-</section>
-
-
-  <!-- меню "написания" -->
-  <section class="hide">
-    <h2 class="visually-hidden">Написать нам</h2>
-    <button type="button">Закрыть</button>
-    
-    <form action="https://echo.htmlacademy.ru" method="POST">
-    <label>
-      <span>Ваше имя:</span>
-      <input type="text" name="name" placeholder="Имя Фамилия">
-    </label>
-    
-    <label>
-      <span>Ваш e-mail:</span>
-      <input type="email" name="email" placeholder="email@example.com">
-    </label>
-    
-    <label>
-      <span>Текст письма:</span>
-      <textarea name="text" placeholder="В свободной форме"></textarea>
-    </label>
-    
-    <button type="submit">Отправить</button>
-    </form>
-  </section>
   </body>
 </html>

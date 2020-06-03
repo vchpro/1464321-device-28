@@ -16,7 +16,7 @@
           <ul class="nav-list">
             <li class="header-search">
             <form action="https://echo.htmlacademy.ru">
-              <input type="search" name="search" placeholder="Поиск по сайту">
+              <input type="search" name="search" placeholder="Поиск по сайту" class="site-search">
               <button type="submit" class="search-button hide">Найти</button>
             </form>
             </li>
@@ -28,7 +28,7 @@
 
           <ul class="nav-container">
           <li class="nav-catalog">
-          <a href="catalog.html">Каталог товаров</a>
+          <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
           <!-- скрытое меню -->
           <ul class="hide">
             <li>
@@ -221,7 +221,7 @@
 <div class="about-and-contacts">
 
   <section class="about">
-    <h2>О нас</h2>
+    <h2 class="about-h2">О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
     <ul class="about-delivery-services">
@@ -271,9 +271,9 @@
   <section class="social-footer-container">
     <h2 class="visually-hidden">Соц-сети</h2>
     <ul class="main-socialy">
-      <li><a href=""><span class="visually-hidden">Facebook</span></a></li>
-      <li><a href=""><span class="visually-hidden">Instagram</span></a></li>
-      <li><a href=""><span class="visually-hidden">Twitter</span></a></li>
+      <li><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+      <li><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+      <li><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
 
     <div class="htmlacademy-container">
@@ -294,27 +294,30 @@
 
 
   <!-- меню "написания" -->
-  <section class="hide">
+  <section class="contact-form-container hide">
     <h2 class="visually-hidden">Написать нам</h2>
-    <button type="button">Закрыть</button>
+    <button type="button" class="contact-form-close"></button>
 
-    <form action="https://echo.htmlacademy.ru" method="POST">
+    <form action="https://echo.htmlacademy.ru" method="POST" class="contact-form">
+
+      <div class="contact-form-name-email">
     <label>
-      <span>Ваше имя:</span>
-      <input type="text" name="name" placeholder="Имя Фамилия">
+      <span class="contact-form-label">Ваше имя:</span><br>
+      <input type="text" name="name" placeholder="Имя Фамилия" class="contact-form-input">
     </label>
 
     <label>
-      <span>Ваш e-mail:</span>
-      <input type="email" name="email" placeholder="email@example.com">
+      <span class="contact-form-label">Ваш e-mail:</span><br>
+      <input type="email" name="email" placeholder="email@example.com" class="contact-form-input">
     </label>
 
-    <label>
-      <span>Текст письма:</span>
-      <textarea name="text" placeholder="В свободной форме"></textarea>
-    </label>
+  </div>
 
-    <button type="submit">Отправить</button>
+    <label class="contact-form-text">
+      <span class="contact-form-label">Текст письма:</span><br>
+      <textarea name="text" placeholder="В свободной форме" class="contact-form-input contact-form-message"></textarea><br>
+    </label>
+    <button type="submit" class="btn contact-form-send">Отправить</button>
     </form>
   </section>
   </body>
