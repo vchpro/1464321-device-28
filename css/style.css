@@ -1008,6 +1008,11 @@ input:checked + .radio-button::before {
     background: url(../img/checked-radio.svg) no-repeat center center;
 }
 
+.site-search {
+    background: none;
+    border: none;
+}
+
 .site-search:hover {
     color: rgba(0, 0, 0, 0.6);
 }
