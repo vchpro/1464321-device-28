@@ -94,8 +94,11 @@ body {
 }
 
 .main-socialy {
+    padding: 0;
     list-style: none;
     margin: 0 auto;
+    /* если что нибудь сделать с шириной то эта штука растянется на всё свободное место */
+    /* Если добавится 4-я иконка, то пусть увеличат ширину)  */
     width: 136px;
     display: flex;
     justify-content: space-between;
@@ -122,7 +125,7 @@ body {
 
 
 .header-login {
-   margin-left: 376px; 
+   margin-left: 398px; 
    padding-left: 20px;
    background: url(../img/user.svg) no-repeat center left;
 }
@@ -246,6 +249,7 @@ body {
 }
 
 .btn {
+    position: relative;
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -262,16 +266,69 @@ body {
     height: 8px;
     content: "";
     background: var(--special-yellow-dark);
-    position: relative;
-    bottom: 15px;
+    position: absolute;
+    bottom: 5px;
     z-index: -1;
+}
+
+.btn-filter-show {
+    position: relative;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    border: none;
+    z-index: 34312;
+    background: none;
+}
+
+.btn-filter-show::after {
+    display: block;
+    width: 220px;
+    height: 8px;
+    content: "";
+    background: var(--special-yellow-dark);
+    position: absolute;
+    left: -40px;
+    bottom: 5px;
+    z-index: -1;
+}
+
+.btn-filter-show:hover:after {
+    width: 220px;
+    height: 40px;
+    bottom: -8px;
+}
+
+.btn-more-about {
+    top: 84px;
 }
 
 .btn:hover:after {
     width: 220px;
     height: 40px;
-    bottom: 30px;
+    bottom: -8px;
 }
+
+.btn-write-us::after {
+    display: block;
+    width: 220px;
+    height: 8px;
+    content: "";
+    background: var(--special-yellow-dark);
+    position: absolute;
+    left: -15px;
+    z-index: -1;
+}
+
+.btn-write-us {
+    display: block;
+    margin-top: 60px;
+}
+
 
 
 .address {
@@ -456,7 +513,6 @@ body {
 
 .about-slider {
     display: flex;
-    /* justify-content: space-between; */
     width: 1160px;
     min-height: 288px;
     margin: 0 auto;
@@ -714,7 +770,6 @@ body {
     margin-top: 50px;
     display: grid;
     max-width: 1160px;
-     /* grid-template-rows: auto 1214px;  */
     margin: 0 auto;
 }
 
@@ -783,7 +838,6 @@ body {
 }
 
 .catalog-menu {
-    background: url(../img/plus.svg) no-repeat center right;
     padding-right: 34px;
 }
 
@@ -795,25 +849,36 @@ body {
 
 .contact-form-container {
     position: fixed;
-    top: 25%;
-    left: 25%;
-    margin: 0 auto;
+    left: auto;
+    top: auto;
     width: 960px;
     height: 550px;
     background: var(--basic-white);
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+    left:50%;
+    top: 25%;
+    transform: translateX(-50%);
 }
 
 .contact-form-close {
     width: 55px;
     height: 55px;
     margin-left: 900px;
-    background: url(../img/button_close.png) no-repeat center center;
-    /* с картинкой что то явно произошло, но все почти нормально */
+    background: url(../img/button_close.svg) no-repeat center center var(--special-yellow);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.contact-form-close:hover {
+    opacity: 1;
+}
+
+.contact-form-close:active {
+    opacity: 0.7;
 }
 
 .contact-form-label {
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -853,8 +918,6 @@ body {
     content: "";
     width: 80px;
     height: 7px;
-    
-    /* basic-black */
     display: block;
     background: var(--basic-black);
 
@@ -864,8 +927,6 @@ body {
     content: "";
     width: 80px;
     height: 7px;
-    
-    /* basic-black */
     display: block;
     background: var(--basic-black);
 
@@ -892,7 +953,6 @@ body {
 }
 
 .label-for-checkbox::before {
-    box-sizing: border-box;
     display: inline-block;
     content: "";
     width: 24px;
@@ -902,7 +962,7 @@ body {
 }
 
 
-.checked-filter::before {
+input:checked + .label-for-checkbox::before {
     background: url(../img/checked.svg) no-repeat center center;
 }
 
@@ -944,7 +1004,7 @@ body {
     border-radius: 50%;
 }
 
-.checked-radio::before {
+input:checked + .radio-button::before {
     background: url(../img/checked-radio.svg) no-repeat center center;
 }
 
@@ -959,7 +1019,7 @@ body {
 .header-login-name:hover, .header-cart-catalog:hover, .header-compare-catalog:hover, 
 .header-login:hover,  .header-compare:hover, .header-cart:hover, .footer-act-login:hover, .footer-act-logout:hover, .footer-act-compare:hover, .footer-act-cart:hover,
 .catalog-menu:hover, .header-delivery a:hover, .header-guarantee a:hover, .header-contacts a:hover,  .footer-nav-delivery:hover, .footer-nav-guarantee:hover,
-.footer-nav-contacts:hover, .htmlacademy:hover, .main-logo:hover, .footer-logo:hover
+.footer-nav-contacts:hover, .htmlacademy:hover, .main-logo:hover, .footer-logo:hover, .bread-crumb:hover
 {
     opacity: 0.6;
 }
@@ -972,23 +1032,35 @@ body {
 .header-login-name:active, .header-cart-catalog:active, .header-compare-catalog:active, 
 .header-login:active,  .header-compare:active, .header-cart:active, .footer-act-login:active, .footer-act-logout:active, .footer-act-compare:active, .footer-act-cart:active,
 .catalog-menu:active, .header-delivery a:active, .header-guarantee a:active, .header-contacts a:active,  .footer-nav-delivery:active, .footer-nav-guarantee:active,
-.footer-nav-contacts:active, .htmlacademy:active, .main-logo:active, .footer-logo:active
+.footer-nav-contacts:active, .htmlacademy:active, .main-logo:active, .footer-logo:active, .bread-crumb
 {
     opacity: 0.3;
+}
+
+.bread-crumb:active {
+    opacity: 0.1;
 }
 
 .facebook:hover, .instagram:hover, .twitter:hover {
     filter: brightness(200%);
 }
 
-.bread-crumb {
-    opacity: 0.3;
+
+.plus {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.6);
+    height: 15px; 
+    width: 3px;
+    position: relative; 
+    left: 0px;
 }
 
-.bread-crumb:hover {
-    opacity: 0.6;
-}
-
-.bread-crumb:active {
-    opacity: 0.1;
+.plus:after {
+    content: "";
+    height: 3px; 
+    width: 15px; 
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute; 
+    left: -6px; 
+    top: 5px;
 }

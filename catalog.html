@@ -29,8 +29,10 @@
         
         <ul class="nav-container">
         <li class="nav-catalog">
+          <div class="catalog-menu-container">
         <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
-        <!-- скрытое меню -->
+        <div class="plus"></div>
+      </div>
         <ul class="hide">
           <li>
             <a href="">Виртуальная реальность</a>
@@ -99,7 +101,7 @@
             <ul class="filter-ul">
             <li>
             <input id="filter-black" name="color" type="checkbox" value="Черный" checked class="visually-hidden"> 
-            <label for="filter-black" class="label-for-checkbox checked-filter">Черный</label>
+            <label for="filter-black" class="label-for-checkbox">Черный</label>
             </li>
           <li>
             <input id="filter-white" name="color" type="checkbox" value="Белый" class="visually-hidden">
@@ -107,11 +109,11 @@
           </li>
           <li>
             <input id="filter-blue" name="color" type="checkbox" value="Синий" checked class="visually-hidden">
-            <label for="filter-blue" class="label-for-checkbox checked-filter">Синий</label>
+            <label for="filter-blue" class="label-for-checkbox">Синий</label>
           </li>
           <li>
             <input id="filter-red" name="color" type="checkbox" value="Красный" checked class="visually-hidden">
-            <label for="filter-red" class="label-for-checkbox checked-filter">Красный</label>
+            <label for="filter-red" class="label-for-checkbox">Красный</label>
           </li>
           <li>
             <input id="filter-pink" name="color" type="checkbox" value="Розовый" class="visually-hidden">
@@ -125,7 +127,7 @@
             <ul class="bluetooth-filter-ul">
             <li>
             <input id="filter-bluetooth-on" name="bluetooth" type="radio" value="Есть" checked class="visually-hidden"> 
-            <label for="filter-bluetooth-on" class="radio-button checked-radio">Есть</label>
+            <label for="filter-bluetooth-on" class="radio-button">Есть</label>
             </li>
           <li>
             <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет" class="visually-hidden">
@@ -133,7 +135,7 @@
           </li>
         </ul>
           </fieldset>
-          <button type="submit" class="btn">Показать</button>
+          <button type="submit" class="btn-filter-show">Показать</button>
         </form>
       </aside>
       
