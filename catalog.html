@@ -15,10 +15,10 @@
       <nav class="main-nav">
         <ul class="nav-list">
           <li class="header-search">
-          <form action="https://echo.htmlacademy.ru">
-            <input type="search" name="search" placeholder="Поиск по сайту">
-            <button type="submit" class="search-button hide">Найти</button>
-          </form>
+            <form action="https://echo.htmlacademy.ru" class="site-search-form">
+              <input type="search" name="search" placeholder="Поиск по сайту" class="site-search">
+              <button type="submit" class="search-button hide">Найти</button>
+            </form>
           </li>
 
           <li class="nav-btn header-login-name"><a href="">Валентин Петухов</a></li>
@@ -30,17 +30,11 @@
         <ul class="nav-container">
         <li class="nav-catalog">
         <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
-        <ul class="hide">
+        <ul class="catalog-menu-items">
+          <li>
+            <ul class="catalog-menu-items-col-1">
           <li>
             <a href="">Виртуальная реальность</a>
-          </li>
-
-          <li>
-            <a href="">Моноподы для селфи</a>
-          </li>
-
-          <li>
-            <a href="">Экшн-камеры</a>
           </li>
 
           <li>
@@ -48,12 +42,32 @@
           </li>
 
           <li>
-            <a href="">Умные часы</a>
+            <a href="">Квадрокоптер</a>
+        </li>
+      </ul>
+        </li>
+
+        <li>
+          <ul class="catalog-menu-items-col-2">
+
+          <li>
+            <a href="">Моноподы для селфи</a>
           </li>
 
           <li>
-            <a href="">Квадрокоптер</a>
+            <a href="">Умные часы</a>
           </li>
+        </ul>
+      </li>
+
+      <li>
+        <ul class="catalog-menu-items-col-3">
+
+          <li>
+            <a href="">Экшн-камеры</a>
+          </li>
+        </ul>
+      </li>
         </ul>
         </li>
         <li class="nav-item header-delivery"><a href="">Доставка</a></li> 
@@ -93,6 +107,7 @@
                 <span class="filter-price">до 5000</span>
               </div>
             </fieldset>
+            <div class="line"></div>
             <fieldset class="filter-color">
             <legend>Цвет</legend>
             <ul class="filter-ul">
@@ -119,6 +134,7 @@
         </ul>
           </fieldset>
 
+          <div class="line"></div>
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
             <ul class="bluetooth-filter-ul">
@@ -132,7 +148,7 @@
           </li>
         </ul>
           </fieldset>
-          <button type="submit" class="btn-filter-show">Показать</button>
+          <button type="submit" class="btn btn-filter-show">Показать</button>
         </form>
       </aside>
       
@@ -170,7 +186,7 @@
 
       <section class="products">
         <h2 class="visually-hidden">Наши товары</h2>
-          <article class="product">
+          <article class="product product-first">
           <a href="">
             <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
             <h2 class="product-name">Любительская селфи-палка</h2>
@@ -182,7 +198,7 @@
           </div>
           </article>
 
-          <article class="product">
+          <article class="product product-second">
           <a href="">
             <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
             <h2 class="product-name">Профессиональная селфи-палка</h2>
@@ -206,7 +222,7 @@
           </div>
           </article>
 
-          <article class="product">
+          <article class="product product-new">
           <a href="">
             <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
             <h2 class="product-name">Селфи-палка «Следуй за мной»</h2>
@@ -241,7 +257,7 @@
 </main>
 
 <footer class="main-footer">
-  <section class="main-footer-container">
+  <section class="main-footer-container main-footer-container-catalog">
     <h2 class="visually-hidden">Навигация</h2>
 
 
@@ -270,9 +286,9 @@
  <section class="social-footer-container">
   <h2 class="visually-hidden">Соц-сети</h2>
   <ul class="main-socialy">
-    <li><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
-    <li><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
-    <li><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
+    <li class="social-item"><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+    <li class="social-item"><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+    <li class="social-item"><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
   </ul>
 
   <div class="htmlacademy-container">

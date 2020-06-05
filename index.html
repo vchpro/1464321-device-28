@@ -15,7 +15,7 @@
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="header-search">
-            <form action="https://echo.htmlacademy.ru">
+            <form action="https://echo.htmlacademy.ru" class="site-search-form">
               <input type="search" name="search" placeholder="Поиск по сайту" class="site-search">
               <button type="submit" class="search-button hide">Найти</button>
             </form>
@@ -29,29 +29,45 @@
           <ul class="nav-container">
           <li class="nav-catalog">
           <a href="catalog.html" class="catalog-menu">Каталог товаров</a>
-          <ul class="hide">
+          <ul class="catalog-menu-items">
+            <li>
+              <ul class="catalog-menu-items-col-1">
             <li>
               <a href="">Виртуальная реальность</a>
             </li>
+
+            <li>
+              <a href="">Фитнес-браслеты</a>
+            </li>
+
+            <li>
+              <a href="">Квадрокоптер</a>
+          </li>
+        </ul>
+          </li>
+
+          <li>
+            <ul class="catalog-menu-items-col-2">
 
             <li>
               <a href="">Моноподы для селфи</a>
             </li>
 
             <li>
-              <a href="">Экшн-камеры</a>
-            </li>
-            <li>
-              <a href="">Фитнес-браслеты</a>
-            </li>
-
-            <li>
               <a href="">Умные часы</a>
             </li>
+          </ul>
+        </li>
+
+        <li>
+          <ul class="catalog-menu-items-col-3">
 
             <li>
-              <a href="">Квадрокоптер</a>
+              <a href="">Экшн-камеры</a>
             </li>
+          </ul>
+        </li>
+        
           </ul>
           </li>
           <li class="nav-item header-delivery"><a href="">Доставка</a></li>
@@ -70,7 +86,7 @@
             <img src="img/slider-1.png" alt="Селфи-палка" width="500" height="500" class="main-slide-photo">
 
             <div class="about-product">
-            <p class="slider-name">Делай селфи, как Бен Стиллер!</p>
+            <p class="slider-name">Делай селфи,<br> как Бен Стиллер!</p>
             <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="" class="btn">Подробнее</a>
             <ul class="features">
@@ -228,14 +244,18 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a href="" class="btn-more-about btn">Подробнее о нас</a>
+    <div class="btn-more-about-container">
+    <a href="" class="btn btn-more-about">Подробнее о нас</a>
+  </div>
   </section>
 
   <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <img src="img/map.png" alt="Карта" width="560" height="222">
+    <div class="btn-write-us-container">
     <a href="" class="btn btn-write-us">Напишите нам</a>
+    </div>
   </section>
 </div>
 </main>
@@ -270,9 +290,9 @@
   <section class="social-footer-container">
     <h2 class="visually-hidden">Соц-сети</h2>
     <ul class="main-socialy">
-      <li><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
-      <li><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
-      <li><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
+      <li class="social-item"><a href="" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+      <li class="social-item"><a href="" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+      <li class="social-item"><a href="" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
     </ul>
 
     <div class="htmlacademy-container">
