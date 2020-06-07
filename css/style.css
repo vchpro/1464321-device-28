@@ -104,10 +104,9 @@ body {
 }
 
 .main-logo {
-    display: block;
-    position: relative;
+    display: inline-block;
     margin-left: 60px;
-    top: -20px;
+    margin-top: -20px;
 }
 
 .nav-item a, .nav-catalog a {
