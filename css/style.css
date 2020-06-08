@@ -1276,6 +1276,7 @@ input:checked + .radio-button::before {
     height: 7px;
     background: #FFC600;
     position: relative;
+    top: 12px;
 }
 
 .main-footer-container-catalog::after {
@@ -1298,7 +1299,7 @@ input:checked + .radio-button::before {
 .social-footer-container {
     margin: 0 auto;
     width: 1160px;
-    margin-top: 49px;
+    margin-top: 55px;
     display: flex;
 }
 
