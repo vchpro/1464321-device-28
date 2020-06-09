@@ -1029,6 +1029,7 @@ input:checked + .radio-button::before {
     font-family: inherit;
     font-weight: inherit;
     color: var(--special-low-gray);
+    height: 22px;
 }
 
 .header-delivery {
@@ -1249,7 +1250,7 @@ input:checked + .radio-button::before {
 }
 
 .footer-nav-guarantee {
-    margin-left: 32px;
+    margin-left: 33px;
 }
 
 .footer-items {
@@ -1285,7 +1286,7 @@ input:checked + .radio-button::before {
 }
 
 .footer-nav-contacts {
-    margin-left: 30px;
+    margin-left: 33px;
 }
 
 .htmlacademy-container {
@@ -1326,10 +1327,6 @@ input:checked + .radio-button::before {
 
 .footer-nav-delivery:active {
     opacity: 0.3;
-}
-
-.footer-nav-delivery {
-    margin-left: 4px;
 }
 
 .footer-nav-guarantee:active {
