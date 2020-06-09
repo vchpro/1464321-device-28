@@ -276,6 +276,9 @@ body {
     color: var(--basic-black);
     margin-left: auto;
     margin-top: 32px;
+    width: 83px;
+    margin-right: -2px;
+    white-space: nowrap;
 }
 
 .sort-main {
@@ -416,6 +419,7 @@ body {
     font-weight: 300;
     letter-spacing: 0.1em;
 }
+
 .feature .characteristic {
     font-size: 36px;
     line-height: 42px;
