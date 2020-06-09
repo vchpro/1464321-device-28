@@ -233,7 +233,7 @@ body {
     line-height: 58px;
 }
 
-.bread-crumb a{
+.bread-crumb{
     font-size: 14px;
     line-height: 19px;
     opacity: 0.3;
@@ -264,6 +264,7 @@ body {
     line-height: 22px;
     letter-spacing: 0.05em;
     color: var(--basic-black);
+    margin-top: 30px;
 }
 
 .product-price {
@@ -274,7 +275,7 @@ body {
     letter-spacing: 0.05em;
     color: var(--basic-black);
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
 .sort-main {
@@ -542,6 +543,13 @@ body {
     height: 6px;
     width: 4px;
     background: url(../img/bread-crumb.svg);
+}
+
+.bread-crumb:first-of-type::after {
+    margin-left: 20px;
+}
+
+.bread-crumb:nth-of-type(2)::after {
     margin-left: 20px;
 }
 
@@ -595,8 +603,16 @@ body {
 
 .product {
     margin-left: 40px;
-    margin-bottom: 48px;
+    margin-top: 48px;
     width: 360px;
+}
+
+.product:first-of-type {
+    margin-top: 0;
+}
+
+.product:nth-of-type(2) {
+    margin-top: 0;
 }
 
 .product-link {
