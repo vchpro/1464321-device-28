@@ -981,7 +981,7 @@ input:checked + .radio-button::before {
     padding-top: 18px;
     position: absolute;
     left: -60px;
-    width: 1099px;
+    width: 1160px;
     height: 146px;
     background: var(--special-yellow);
 }
