@@ -523,6 +523,7 @@ body {
     width: 1160px;
     padding-left: 60px;
     box-sizing: border-box;
+    margin-top: 44px;
     margin-bottom: 50px;
 }
 
@@ -885,7 +886,7 @@ input:checked + .radio-button::before {
 
 .main-header {
     background-color: var(--special-yellow);
-    min-height: 206px;
+    min-height: 186px;
     width: 1160px;
     margin: 0 auto;
     margin-top: 40px;
