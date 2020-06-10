@@ -318,6 +318,7 @@ body {
     margin-left: 40px;
     margin-top: 40px;
     margin-bottom: 78px;
+    flex-basis: 100%;
 }
 
 .page-nav-items {
@@ -549,11 +550,7 @@ body {
     background: url(../img/bread-crumb.svg);
 }
 
-.bread-crumb:first-of-type::after {
-    margin-left: 20px;
-}
-
-.bread-crumb:nth-of-type(2)::after {
+.bread-crumb:first-of-type::after, .bread-crumb:nth-of-type(2)::after {
     margin-left: 20px;
 }
 
@@ -594,6 +591,8 @@ body {
 
 .sort-main fieldset {
     border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .products {
@@ -602,7 +601,7 @@ body {
     flex-wrap: wrap;
     width: 800px;
     margin-top: 70px;
-    margin-left: 72px;
+    margin-left: 32px;
 }
 
 .product {
@@ -668,7 +667,7 @@ body {
 
 .filter {
     display: block;
-    margin: 0 auto;
+    margin-left: 60px;
 
 }
 
