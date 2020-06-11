@@ -78,29 +78,57 @@
       </header>
 
       <main>
+
+        <div class="decorate-block">
+
+        </div>
+
+
+
         <ol class="main-slider">
 
           <li>
             <section class="main-slide">
             <h2 class="visually-hidden">Самая длинная селфи-палка</h2>
-            <img src="img/slider-1.png" alt="Селфи-палка" width="500" height="500" class="main-slide-photo">
+            <div class="main-slide-img">
+            <img src="img/slider-1.png" alt="Селфи-палка" width="384" height="486" class="main-slide-photo">
+            </div>
 
             <div class="about-product">
             <p class="slider-name">Делай селфи,<br> как Бен Стиллер!</p>
-            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="" class="btn">Подробнее</a>
+
+            <div class="main-slide-nav">
+              <ul>
+                <li>
+                  <button type="button" class="main-slide-nav-button main-slide-nav-button-checked"><span class="visually-hidden">Первый слайд</span></button>
+                </li>
+    
+                <li>
+                  <button type="button" class="main-slide-nav-button"><span class="visually-hidden">Второй слайд</span></button>
+                </li>
+    
+                <li>
+                  <button type="button" class="main-slide-nav-button"><span class="visually-hidden">Третий слайд</span></button>
+                </li>
+              </ul>
+            </div>
+
+
             <ul class="features">
               <li class="feature">
                 <span class="characteristic">8,5 м</span><br>
+              <!-- почему в пп не ровно стоит? -->
                 <span class="characteristic-what">Длина палки</span>
               </li>
 
-              <li class="feature">
+              <li class="feature feature-weight">
                 <span class="characteristic">5 кг</span><br>
                 <span class="characteristic-what">Вес палки</span>
               </li>
 
-              <li class="feature">
+              <li class="feature feature-material">
                 <span class="characteristic">Карбон</span><br>
                 <span class="characteristic-what">Материал</span>
               </li>
@@ -144,46 +172,31 @@
         </li>
 
       </ol>
-        <div class="hide">
-          <ul>
-            <li>
-              <button type="button">Первый слайд</button>
-            </li>
-
-            <li>
-              <button type="button">Второй слайд</button>
-            </li>
-
-            <li>
-              <button type="button">Третий слайд</button>
-            </li>
-          </ul>
-        </div>
 
         <section class="promo-products">
           <h2 class="visually-hidden">Наши товары</h2>
           <ul class="promo-products-container">
-            <li>
+            <li class="promo-product promo-product-virtual">
               <a href="">Виртуальная реальность</a>
           </li>
 
-          <li>
-            <a href="">Моноподы для селфи</a>
+          <li class="promo-product promo-product-monopod">
+            <a href="">Моноподы<br> для селфи</a>
           </li>
 
-          <li>
+          <li class="promo-product promo-product-ekshn">
             <a href="">Экшн-камеры</a>
           </li>
 
-          <li>
+          <li class="promo-product promo-product-fitnes">
             <a href="">Фитнес-браслеты</a>
           </li>
 
-          <li>
+          <li class="promo-product promo-product-clock">
             <a href="">Умные часы</a>
           </li>
 
-          <li>
+          <li class="promo-product promo-product-quadcopter">
             <a href="">Квадрокоптеры</a>
           </li>
           </ul>
@@ -191,14 +204,14 @@
 
         <section class="about-slider">
           <div class="button-container">
-        <button type="button" class="about-btn">Доставка</button>
+        <button type="button" class="about-btn about-btn-active">Доставка</button>
         <button type="button" class="about-btn">Гарантия</button>
         <button type="button" class="about-btn">Кредит</button>
       </div>
 
-        <div>
+        <div class="about-content-container">
         <h2 class="h2">Доставка</h2>
-        <p class="content">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж</p>
+        <p class="about-content">Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж</p>
       </div>
 
         <div class="hide">
