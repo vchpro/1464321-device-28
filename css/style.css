@@ -743,16 +743,6 @@ body {
     min-height: 70px;
 }
 
-.sort::after {
-    content: "";
-    width: 5000px;
-    height: 70px2;
-    background-color: var(--basic-grey-light);
-    position: absolute;
-    right: -5000px;
-    overflow: hidden;
-}
-
 .sort .sort-by-container {
     display: flex;
     list-style: none;
@@ -894,6 +884,17 @@ body {
     background-image: linear-gradient(to bottom, #DCDCDC 70px, #E5E5E5 70px, #E5E5E5 1282px);
     position: absolute;
     left: -5000px;
+    overflow: hidden;
+}
+
+
+.main-catalog-container::after {
+    content: "";
+    width: 5000px;
+    height: 70px;
+    background-color: var(--basic-grey-light);
+    position: absolute;
+    right: -5000px;
     overflow: hidden;
 }
 
