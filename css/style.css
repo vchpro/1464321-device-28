@@ -395,6 +395,10 @@ body {
     background: url(../img/virtual.svg) no-repeat;
 }
 
+.promo-product:hover::before {
+    background-color: tomato;
+}
+
 .promo-product-monopod::before {
     content: "";
     display: inline-block;
@@ -450,11 +454,22 @@ body {
     margin: 0 auto;
     background: var(--basic-grey-light);
     margin-top: 184px;
-    position: relative;
+}
+
+.about-slider::after {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    background-color: var(--basic-grey-light);
+    width: 100%;
+    height: 288px;
+    z-index: -3;
+    right: 0;
 }
 
 .about-content-container {
     margin-top: -30px;
+    position: relative;
 }
 
 .about-content-container::after {
@@ -463,8 +478,8 @@ body {
     width: 136px;
     height: 164px;
     background: url(../img/courier.svg);
-    top: -28px;
-    right: 0px;
+    top: -1px;
+    right: -267px;
 }
 
 .about-content {
@@ -660,7 +675,6 @@ body {
     justify-content: space-between;
     margin-top: 85px;
 }
-
 .about-container {
     display: block;
 }
@@ -844,6 +858,18 @@ body {
     display: grid;
     max-width: 1160px;
     margin: 0 auto;
+    position: relative;
+}
+
+/* Зато простое решение) */
+.main-catalog-container::before {
+    content: "";
+    width: 5000px;
+    height: 1282px;
+    background-image: linear-gradient(to bottom, #DCDCDC 70px, #E5E5E5 70px, #E5E5E5 1282px);
+    position: absolute;
+    left: -5000px;
+    overflow: hidden;
 }
 
 .filter {
