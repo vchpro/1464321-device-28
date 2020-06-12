@@ -10,6 +10,7 @@
     --special-yellow-dark: #F0C52E;
     --special-low-gray: rgba(0, 0, 0, 0.3);
     --special-for-filter-name: #DCDCDC;
+    --special-yellow-light: #F7E296;
 }
 
 
@@ -387,16 +388,25 @@ body {
     margin-bottom: 32px;
 }
 
+.promo-product:hover::before {
+    background-color: var(--special-yellow-dark);
+}
+
+.promo-product:active::before {
+    background-color: var(--special-yellow-dark);
+}
+
+.promo-product:active {
+    opacity: 0.3;
+}
+
 .promo-product-virtual::before {
     content: "";
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/virtual.svg) no-repeat;
-}
-
-.promo-product:hover::before {
-    background-color: tomato;
+    background: url(../img/virtual.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .promo-product-monopod::before {
@@ -404,7 +414,8 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/monopod.svg) no-repeat;
+    background: url(../img/monopod.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .promo-product-ekshn::before {
@@ -412,7 +423,8 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/ekshn.svg) no-repeat;
+    background: url(../img/ekshn.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .promo-product-fitnes::before {
@@ -420,7 +432,8 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/fitnes.svg) no-repeat;
+    background: url(../img/fitnes.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .promo-product-clock::before {
@@ -428,7 +441,8 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/clock.svg) no-repeat;
+    background: url(../img/clock.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .promo-product-quadcopter::before {
@@ -436,7 +450,8 @@ body {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/quadcopter.svg) no-repeat;
+    background: url(../img/quadcopter.svg) no-repeat center center;
+    background-color: var(--special-yellow-light);
 }
 
 .about-slider .h2 {
@@ -726,6 +741,16 @@ body {
     display: flex;
     justify-content: space-between;
     min-height: 70px;
+}
+
+.sort::after {
+    content: "";
+    width: 5000px;
+    height: 70px2;
+    background-color: var(--basic-grey-light);
+    position: absolute;
+    right: -5000px;
+    overflow: hidden;
 }
 
 .sort .sort-by-container {
