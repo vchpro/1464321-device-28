@@ -9,7 +9,7 @@
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
     --special-low-gray: rgba(0, 0, 0, 0.3);
-    --special-for-filter-name: #DCDCDC;
+    --special-extralow-gray: #DCDCDC;
     --special-yellow-light: #F7E296;
 }
 
@@ -384,73 +384,52 @@ body {
     letter-spacing: 0em;
 }
 
-.promo-product::before {
+.promo-product a::before {
     margin-bottom: 32px;
 }
 
-.promo-product:hover::before {
+.promo-product a:hover::before {
     background-color: var(--special-yellow-dark);
 }
 
-.promo-product:active::before {
+.promo-product a:active::before {
     background-color: var(--special-yellow-dark);
 }
 
-.promo-product:active {
+.promo-product a:active {
     opacity: 0.3;
 }
 
-.promo-product-virtual::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.promo-product-virtual a::before {
     background: url(../img/virtual.svg) no-repeat center center;
-    background-color: var(--special-yellow-light);
 }
 
-.promo-product-monopod::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.promo-product-monopod a::before {
     background: url(../img/monopod.svg) no-repeat center center;
-    background-color: var(--special-yellow-light);
 }
 
-.promo-product-ekshn::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.promo-product-ekshn a::before {
     background: url(../img/ekshn.svg) no-repeat center center;
-    background-color: var(--special-yellow-light);
 }
 
-.promo-product-fitnes::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.promo-product-fitnes a::before {
     background: url(../img/fitnes.svg) no-repeat center center;
-    background-color: var(--special-yellow-light);
 }
 
-.promo-product-clock::before {
-    content: "";
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.promo-product-clock a::before {
     background: url(../img/clock.svg) no-repeat center center;
-    background-color: var(--special-yellow-light);
 }
 
-.promo-product-quadcopter::before {
+.promo-product-quadcopter a::before {
+    background: url(../img/quadcopter.svg) no-repeat center center;
+}
+
+
+.promo-product a::before {
     content: "";
     display: inline-block;
     width: 160px;
     height: 160px;
-    background: url(../img/quadcopter.svg) no-repeat center center;
     background-color: var(--special-yellow-light);
 }
 
@@ -464,22 +443,21 @@ body {
 
 .about-slider {
     display: flex;
-    width: 1160px;
+    width: 100%;
     min-height: 288px;
     margin: 0 auto;
     background: var(--basic-grey-light);
     margin-top: 184px;
 }
 
-.about-slider::after {
-    content: "";
-    position: absolute;
-    overflow: hidden;
-    background-color: var(--basic-grey-light);
-    width: 100%;
-    height: 288px;
-    z-index: -3;
-    right: 0;
+
+/* не отклоняй за обертку) */
+.about-slider-container {
+    display: flex;
+    width: 1160px;
+    min-height: 288px;
+    margin: 0 auto;
+    background: var(--basic-grey-light);
 }
 
 .about-content-container {
@@ -571,7 +549,9 @@ body {
     width: 277px;
     color: var(--special-yellow);
     text-align: left;
-    padding-left: 22px;
+    padding-left: 0px;
+    padding-right: 115px;
+    text-align: center;
 }
 
 .about-btn-active::after {
@@ -605,7 +585,6 @@ body {
 .feature {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
-    letter-spacing: 0.1em;
     font-size: 13px;
     line-height: 15px;
 }
@@ -613,12 +592,14 @@ body {
 .feature .characteristic {
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 0.1em;
 }
 
 .feature .characteristic-what {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 18px;
+    margin-top: 16px;
+    letter-spacing: 0.1em;
 }
 
 .feature .characteristic-name {
@@ -641,8 +622,6 @@ body {
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-
-
 
 .sort .sort-by-active {
     opacity: 1;
@@ -849,10 +828,9 @@ body {
 }
 
 .filter-name-container {
-    background: var(--special-for-filter-name);
+    background: var(--special-extralow-gray);
     height: 70px;
 }
-
 
 .filter-name {
     padding: 0;
@@ -871,31 +849,16 @@ body {
 .main-catalog-container {
     margin-top: 50px;
     display: grid;
-    max-width: 1160px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
-}
-
-/* Зато простое решение) */
-.main-catalog-container::before {
-    content: "";
-    width: 5000px;
-    height: 1282px;
-    background-image: linear-gradient(to bottom, #DCDCDC 70px, #E5E5E5 70px, #E5E5E5 1282px);
-    position: absolute;
-    left: -5000px;
-    overflow: hidden;
-}
-
-
-.main-catalog-container::after {
-    content: "";
-    width: 5000px;
-    height: 70px;
-    background-color: var(--basic-grey-light);
-    position: absolute;
-    right: -5000px;
-    overflow: hidden;
+    justify-content: center;
+    background-image: 
+        linear-gradient(to bottom, var(--special-extralow-gray) 70px, var(--basic-grey-light) 70px),
+        linear-gradient(to bottom, var(--basic-grey-light) 70px, var(--basic-white) 70px);
+    background-repeat: no-repeat no-repeat;
+    background-size: 50% 100%, 100% 100%;
+    background-position: -300px 0, 0 0;
 }
 
 .filter {
@@ -905,19 +868,20 @@ body {
 }
 
 .main-slide {
-    margin: 0 auto;
     width: 989px;
-    position: relative;
 }
 
 .main-slider {
     list-style: none;
+    position: relative;
+    margin: 0 auto;
+    width: 989px;
 }
 
 .main-slide-nav {
     position: absolute;
-    bottom: 140px;
-    right: 22px;
+    right: 20px;
+    top: 202px;
 }
 
 .main-slide-nav ul {
@@ -962,11 +926,8 @@ body {
 }
 
 .main-slide .btn {
-    margin-top: 35px;
-    box-sizing: border-box;
-    width: 220px;
-
-    /* из за проблем с шириной сделал бордер бокс */
+    margin-top: 38px;
+    min-width: 177px;
 }
 
 .main-slide .features {
@@ -987,14 +948,14 @@ body {
 }
 
 .main-slide-img {
-    margin-top: -142px;
+    margin-top: -128px;
     margin-left: -15px;
 }
 
 .main-slide  .about-product {
     width: 492px;
     margin-left: 127px;
-    margin-top: -100px;
+    margin-top: -87px;
 }
 
 .partners {
