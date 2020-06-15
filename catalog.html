@@ -94,15 +94,23 @@
             <h2 class="filter-name">Фильтр:</h2>
           </div>
           <form action="https://echo.htmlacademy.ru" class="filter">
-            <fieldset class="hide">
-              <legend class="filter-price-legend">Стоимость</legend>
+            <fieldset>
+              <h2 class="filter-price-h2">Стоимость</h2>
               <div>
-                <button type="button">Меньше</button>
-                <input type="number" name="min" min="0" readonly>
-                <span class="filter-price">от 0</span>
-                <div></div>
-                <button type="button">Больше</button>
-                <input type="number" name="max" max="5000" readonly>
+                <div class="range">
+                  <div class="range-button-less">
+                    <div class="range-point"></div>
+                  </div>
+                  <div class="range-line"></div>
+                  <div class="range-button-more">
+                    <div class="range-point"></div>
+                  </div>
+                </div>
+                <button type="button" class="visually-hidden">Меньше</button>
+                <input type="number" name="min" min="0" readonly class="hide">
+                <span class="filter-price filter-price-min">от 0</span>
+                <button type="button" class="visually-hidden">Больше</button>
+                <input type="number" name="max" max="5000" readonly class="hide">
                 <span class="filter-price">до 5000</span>
               </div>
             </fieldset>
@@ -190,9 +198,9 @@
             <h2 class="product-name">Любительская селфи-палка</h2>
             <span class="product-price">500руб.</span>
           </a>
-          <div class="hide">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="product-menu">
+            <a href="" class="btn">В корзину</a>
+            <a href="" class="product-menu-compare">Добавить к сравнению</a>
           </div>
           </article>
 
@@ -202,9 +210,9 @@
             <h2 class="product-name">Профессиональная<br> селфи-палка</h2>
             <span class="product-price">1 500руб.</span>
           </a>
-          <div class="hide">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="product-menu">
+            <a href="" class="btn">В корзину</a>
+            <a href="" class="product-menu-compare">Добавить к сравнению</a>
           </div>
           </article>
 
@@ -214,9 +222,9 @@
             <h2 class="product-name">Непотопляемая селфи-палка</h2>
             <span class="product-price">2 500 руб.</span>
           </a>
-          <div class="hide">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="product-menu">
+            <a href="" class="btn">В корзину</a>
+            <a href="" class="product-menu-compare">Добавить к сравнению</a>
           </div>
           </article>
 
@@ -226,9 +234,9 @@
             <h2 class="product-name">Селфи-палка «Следуй за<br> мной»</h2>
             <span class="product-price">4 900 руб.</span>
           </a>
-          <div class="hide">
-            <a href="">В корзину</a>
-            <a href="">Добавить к сравнению</a>
+          <div class="product-menu">
+            <a href="" class="btn">В корзину</a>
+            <a href="" class="product-menu-compare">Добавить к сравнению</a>
           </div>
           </article>
 

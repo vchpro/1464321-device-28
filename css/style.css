@@ -258,6 +258,50 @@ body {
     letter-spacing: 0.1em;
 }
 
+.range {
+    margin-top: 27px;
+    position: relative;
+}
+
+.range-line {
+    width: 200px;
+    height: 2px;
+    background-image: linear-gradient(to right, var(--special-green) 113px, rgba(0, 0, 0, 0.2) 113px)
+}
+
+.range-button-less {
+    position: absolute;
+    bottom: -8px;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    background: var(--basic-white);
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+}
+
+.range-button-more {
+    position: absolute;
+    bottom: -8px;
+    left: 113px;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    background: var(--basic-white);
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+}
+
+.range-point {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+    background: #C4C4C4; 
+}
+
 .product-name {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
@@ -317,8 +361,8 @@ body {
     height: 70px;
     display: flex;
     margin-left: 40px;
-    margin-top: 40px;
-    margin-bottom: 59px;
+    margin-top: 22px;
+    margin-bottom: 78px;
     flex-basis: 100%;
 }
 
@@ -443,7 +487,6 @@ body {
 
 .about-slider {
     display: flex;
-    width: 100%;
     min-height: 288px;
     margin: 0 auto;
     background: var(--basic-grey-light);
@@ -465,12 +508,32 @@ body {
     position: relative;
 }
 
-.about-content-container::after {
+.about-slider .slide-1::after {
     content: "";
     position: absolute;
     width: 136px;
     height: 164px;
     background: url(../img/courier.svg);
+    top: -1px;
+    right: -267px;
+}
+
+.about-slider .slide-2::after {
+    content: "";
+    position: absolute;
+    width: 171px;
+    height: 195px;
+    background: url(../img/Guarantee.svg);
+    top: -1px;
+    right: -267px;
+}
+
+.about-slider .slide-3::after {
+    content: "";
+    position: absolute;
+    width: 156px;
+    height: 188px;
+    background: url(../img/credit.svg);
     top: -1px;
     right: -267px;
 }
@@ -559,8 +622,7 @@ body {
 }
 
 .about-btn-active:hover {
-    width: 160px;
-    color: var(--basic-black);
+    background: var(--basic-black);
 }
 
 .button-container .about-btn:nth-of-type(2) {
@@ -576,6 +638,8 @@ body {
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    z-index: 100;
+    position: relative;
 }
 
 .about p {
@@ -627,15 +691,26 @@ body {
     opacity: 1;
 }
 
-.filter-price-legend {
+.filter-price-h2 {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.1em;
+    display: inline-block;
 }
 
 .filter-color::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: var(--basic-black);
+    margin-top: 38px;
+    margin-bottom: 14px;
+}
+
+.filter-price-h2::before {
     content: "";
     display: block;
     width: 200px;
@@ -651,7 +726,7 @@ body {
     width: 200px;
     height: 2px;
     background: var(--basic-black);
-    margin-top: 38px;
+    margin-top: 13px;
     margin-bottom: 14px;
 }
 
@@ -659,7 +734,13 @@ body {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 300;
     font-size: 14px;
-    line-height: 16px;  
+    line-height: 16px;
+    margin-top: 17px;
+    display: inline-block;
+}
+
+.filter-price-min {
+    margin-right: 67px;
 }
 
 .about-and-contacts {
@@ -728,7 +809,7 @@ body {
     color: var(--basic-black);
     margin: auto 0;
     padding: 0;
-    margin-right: 160px;
+    margin-right: 145px;
 }
 
 .sort .sort-by {
@@ -797,6 +878,33 @@ body {
     margin-left: 40px;
     margin-top: 35px;
     width: 360px;
+    position: relative;
+}
+
+.product:hover img{
+    opacity: 0.3;
+}
+
+.product:hover .product-menu {
+    display: block;
+}
+
+.product-menu {
+    display: none;
+    position: absolute;
+    bottom: 238px;
+    left: 54px;
+    z-index: 100;
+}
+
+.product-menu-compare {
+    display: block;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    color: var(--basic-black);
+    text-align: center;
 }
 
 .product:first-of-type {
@@ -835,9 +943,17 @@ body {
 .filter-name {
     padding: 0;
     margin: 0;
-    padding-top: 25px;
+    padding-top: 23px;
+    padding-right: 130px;
     width: 75px;
-    margin: auto;
+    margin: auto;     
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
 }
 
 .address {
@@ -849,7 +965,6 @@ body {
 .main-catalog-container {
     margin-top: 50px;
     display: grid;
-    width: 100%;
     margin: 0 auto;
     position: relative;
     justify-content: center;
@@ -864,7 +979,7 @@ body {
 .filter {
     display: block;
     margin-left: 60px;
-
+    margin-top: 20px;
 }
 
 .main-slide {
@@ -1161,6 +1276,12 @@ input:checked + .label-for-checkbox::before {
 
 .bluetooth-filter-ul {
     padding: 0;
+    margin-top: 30px;
+}
+
+.btn-filter-show {
+    margin-top: 25px;
+    padding-left: 15px;
 }
 
 .radio-button::before {
@@ -1493,7 +1614,6 @@ input:checked + .radio-button::before {
 .main-footer {
     background: var(--basic-dark);
     height: 324px;
-    width: 100%;
 }
 
 .footer-nav-btn a {
