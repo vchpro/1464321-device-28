@@ -653,6 +653,8 @@ body {
 
 .about-btn-active:hover {
     background: var(--basic-black);
+
+    /* пустой коммент */
 }
 
 .button-container .about-btn:nth-of-type(2) {
