@@ -16,7 +16,8 @@
         <ul class="nav-list">
           <li class="header-search">
             <form action="https://echo.htmlacademy.ru" class="site-search-form">
-              <input type="search" name="search" placeholder="Поиск по сайту" class="site-search">
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту" class="site-search">
+              <label for="search" class="visually-hidden">Поиск по сайту</label>
               <button type="submit" class="search-button hide">Найти</button>
             </form>
           </li>
@@ -107,10 +108,12 @@
                   </div>
                 </div>
                 <button type="button" class="visually-hidden">Меньше</button>
-                <input type="number" name="min" min="0" readonly class="hide">
+                <input type="number" id="min" name="min" min="0" readonly class="hide">
+                <label for="min" class="visually-hidden">Минимальная цена</label>
                 <span class="filter-price filter-price-min">от 0</span>
                 <button type="button" class="visually-hidden">Больше</button>
-                <input type="number" name="max" max="5000" readonly class="hide">
+                <input type="number" id="max" name="max" max="5000" readonly class="hide">
+                <label for="max" class="visually-hidden">Максимальная цена</label>
                 <span class="filter-price">до 5000</span>
               </div>
             </fieldset>
@@ -150,7 +153,7 @@
             </li>
           <li class="radio-container">
             <input id="filter-bluetooth-off" name="bluetooth" type="radio" value="Нет" class="visually-hidden">
-            <label for="filter-bluetooth-on" class="radio-button">Нет</label>
+            <label for="filter-bluetooth-off" class="radio-button">Нет</label>
           </li>
         </ul>
           </fieldset>
