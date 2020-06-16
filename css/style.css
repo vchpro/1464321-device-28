@@ -758,7 +758,7 @@ body {
     width: 200px;
     height: 2px;
     background: var(--basic-black);
-    margin-top: 13px;
+    margin-top: 20px;
     margin-bottom: 14px;
 }
 
@@ -1317,6 +1317,7 @@ body {
 .label-for-checkbox::before {
     box-sizing: border-box;
     display: inline-block;
+    vertical-align: middle;
     content: "";
     width: 24px;
     height: 24px;
@@ -1324,6 +1325,17 @@ body {
     margin-right: 18px;
 }
 
+.label-for-checkbox-white::before {
+    margin-top: 4px;
+}
+
+.label-for-checkbox-blue::before {
+    margin-top: 4px;
+}
+
+.label-for-checkbox-pink::before {
+    margin-top: 5px;
+}
 
 input:checked + .label-for-checkbox::before {
     background: url(../img/checked.svg) no-repeat center center;
