@@ -102,10 +102,6 @@ body {
     content: url(../img/twitter.svg);
 }
 
-.main-btns {
-    list-style: none;
-}
-
 .what-we-can {
     margin-top: 42px;
 }
@@ -118,16 +114,6 @@ body {
 }
 
 .nav-item a, .nav-catalog a {
-    font-family: "Gilroy", "Arial", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--basic-black);
-}
-
-.nav-a-li a {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -698,19 +684,6 @@ body {
     letter-spacing: 0.1em;
 }
 
-.feature .characteristic-name {
-    font-size: 13px;
-    line-height: 15px;
-}
-
-.filter .h2 {
-    font-family: "Gilroy", "Arial", sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
 .sort .name {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
@@ -781,9 +754,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 85px;
-}
-.about-container {
-    display: block;
 }
 
 .about {
@@ -1165,10 +1135,6 @@ body {
     list-style: none;
 }
 
-.feature-weight {
-    margin-left: -7px
-}
-
 .main-slide {
     display: flex;
 }
@@ -1364,10 +1330,6 @@ input:checked + .label-for-checkbox::before {
     padding: 0;
     width: 120px;
     margin-bottom: 12px;
-}
-
-.filter legend {
-    margin: 0 auto;
 }
 
 .bluetooth-filter-ul {
@@ -1927,38 +1889,4 @@ input:checked + .radio-button::before {
 .nav-catalog .catalog-menu{
     padding-right: 34px;
     letter-spacing: 0.1em;
-}
-
-.decorate-block {
-    height: 114px;
-    width: 1160px;
-    background: var(--special-yellow);
-    margin: 0 auto;
-}
-
-.decorate-block::before {
-    content: "";
-    width: 100px;
-    height: 7px;
-    background: var(--basic-white);
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    left: 600px;
-    bottom: 85px;
-}
-
-.decorate-block::after {
-    content: "01";
-    font-family: "Gilroy", "Arial", sans-serif;
-    font-weight: 800;
-    font-size: 179px;
-    line-height: 219px;
-    text-transform: uppercase;
-    color: var(--basic-white);
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    left: 829px;
-    bottom: 30px;
 }
