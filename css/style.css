@@ -811,7 +811,7 @@ body {
     display: flex;
 }
 
-.bread-crumb {
+.bread-crumb a{
     opacity: 0.3;
     color: var(--basic-black)
 }
