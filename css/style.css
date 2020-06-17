@@ -1467,6 +1467,14 @@ input:checked + .radio-button::before {
     text-transform: none;
 }
 
+.catalog-menu-items a:hover {
+    opacity: 0.6;
+}
+
+.catalog-menu-items a:active {
+    opacity: 0.3;
+}
+
 .catalog-menu-items-col-1 {
     margin-top: 18px;
     display: flex;
