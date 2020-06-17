@@ -1045,6 +1045,10 @@ body {
     width: 1160px;
 }
 
+.main-slider li {
+    counter-increment: section; 
+}
+
 .main-slide::before {
     content: "";
     display: inline-block;
@@ -1057,7 +1061,6 @@ body {
 }
 
 .main-slide::after {
-    counter-increment: section; 
     content: "0" counter(section);
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
