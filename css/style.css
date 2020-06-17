@@ -1034,7 +1034,11 @@ body {
     list-style: none;
     margin: 0 auto;
     width: 1120px;
-    counter-reset: section;
+    counter-reset: section 0;
+}
+
+.main-slider li {
+    counter-increment: section;
 }
 
 .main-slide-container {
@@ -1043,10 +1047,6 @@ body {
     position: relative;
     margin: 0 auto;
     width: 1160px;
-}
-
-.main-slider li {
-    counter-increment: section; 
 }
 
 .main-slide::before {
