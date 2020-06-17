@@ -18,7 +18,7 @@
             <form action="https://echo.htmlacademy.ru" class="site-search-form">
               <input type="search" name="search" id="search" placeholder="Поиск по сайту" class="site-search">
               <label for="search" class="visually-hidden">Поиск по сайту</label>
-              <button type="submit" class="search-button hide">Найти</button>
+              <button type="submit" class="search-button">Найти</button>
             </form>
           </li>
 
@@ -83,9 +83,9 @@
         <section class="bread-crumb-container">
             <h1 class="page-name">Моноподы для селфи</h1>
             <div class="bread-crumbs">
-            <span class="bread-crumb"><a href="index.html">Главная</a></span>
-            <span class="bread-crumb"><a href="catalog.html">Каталог товаров</a></span>
-            <span class="bread-crumb">Моноподы для селфи</span>
+            <a href="index.html" class="bread-crumb">Главная</a>
+            <a href="catalog.html" class="bread-crumb">Каталог товаров</a>
+            <span class="bread-crumb bread-crumb-now">Моноподы для селфи</span>
           </div>
         </section>
 
@@ -96,22 +96,22 @@
           </div>
           <form action="https://echo.htmlacademy.ru" class="filter">
             <fieldset>
-              <h2 class="filter-price-h2">Стоимость</h2>
+              <h2 class="filter-price-heading">Стоимость</h2>
               <div>
                 <div class="range">
-                  <div class="range-button-less">
-                    <div class="range-point"></div>
+                    <button type="button" class="range-button range-button-less">
+                      <span class="visually-hidden">Меньше</span>
+                    </button>
+                  <div class="range-line">
+                    <div class="range-line-selected"></div>
                   </div>
-                  <div class="range-line"></div>
-                  <div class="range-button-more">
-                    <div class="range-point"></div>
-                  </div>
+                  <button type="button" class="range-button range-button-more">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
                 </div>
-                <button type="button" class="visually-hidden">Меньше</button>
                 <input type="number" id="min" name="min" min="0" readonly class="hide">
                 <label for="min" class="visually-hidden">Минимальная цена</label>
                 <span class="filter-price filter-price-min">от 0</span>
-                <button type="button" class="visually-hidden">Больше</button>
                 <input type="number" id="max" name="max" max="5000" readonly class="hide">
                 <label for="max" class="visually-hidden">Максимальная цена</label>
                 <span class="filter-price">до 5000</span>
@@ -126,11 +126,11 @@
             </li>
           <li>
             <input id="filter-white" name="color" type="checkbox" value="Белый" class="visually-hidden">
-            <label for="filter-white" class="label-for-checkbox label-for-checkbox-white">Белый</label>
+            <label for="filter-white" class="label-for-checkbox">Белый</label>
           </li>
           <li>
             <input id="filter-blue" name="color" type="checkbox" value="Синий" checked class="visually-hidden">
-            <label for="filter-blue" class="label-for-checkbox label-for-checkbox-blue">Синий</label>
+            <label for="filter-blue" class="label-for-checkbox">Синий</label>
           </li>
           <li>
             <input id="filter-red" name="color" type="checkbox" value="Красный" checked class="visually-hidden">
@@ -138,7 +138,7 @@
           </li>
           <li>
             <input id="filter-pink" name="color" type="checkbox" value="Розовый" class="visually-hidden">
-            <label for="filter-pink" class="label-for-checkbox label-for-checkbox-pink">Розовый</label>
+            <label for="filter-pink" class="label-for-checkbox">Розовый</label>
           </li>
         </ul>
           </fieldset>
@@ -182,11 +182,15 @@
 
         <ul class="sort-navigate">
           <li class="up">
-            <a href="" class="visually-hidden">Вверх</a>
+            <a href="" class="">
+              <span class="visually-hidden">Вверх</span>
+            </a>
           </li>
 
           <li class="down">
-            <a href="" class="visually-hidden">Вниз</a>
+            <a href="" class="">
+              <span class="visually-hidden">Вниз</span>
+            </a>
           </li>
         </ul>
 
@@ -198,7 +202,7 @@
           <a href="" class="product-link">
             <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
             <h2 class="product-name">Любительская селфи-палка</h2>
-            <span class="product-price">500руб.</span>
+            <span class="product-price">500 руб.</span>
           </a>
           <div class="product-menu">
             <a href="" class="btn btn-to-cart">В корзину</a>
@@ -210,7 +214,7 @@
           <a href="" class="product-link">
             <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
             <h2 class="product-name">Профессиональная<br> селфи-палка</h2>
-            <span class="product-price">1 500руб.</span>
+            <span class="product-price">1 500 руб.</span>
           </a>
           <div class="product-menu">
             <a href="" class="btn btn-to-cart">В корзину</a>

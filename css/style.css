@@ -221,17 +221,6 @@ body {
     line-height: 58px;
 }
 
-.bread-crumb{
-    font-size: 14px;
-    line-height: 19px;
-    opacity: 0.3;
-    color: var(--basic-black);
-}
-
-.bread-crumb:not(:first-child) {
-    margin-left: 16px;
-}
-
 .filter label {
     font-size: 14px;
     line-height: 19px;
@@ -253,11 +242,19 @@ body {
 .range-line {
     width: 200px;
     height: 2px;
-    background-image: linear-gradient(to right, var(--special-green) 113px, rgba(0, 0, 0, 0.2) 113px)
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.range-button-less {
+.range-line-selected {
+    width: 113px;
+    height: 2px;
+    background-color: var(--special-green); 
+}
+
+.range-button {
+    display: inline-block;
     position: absolute;
+    /* Пусть с помощью жс left изменяют */
     bottom: -8px;
     z-index: 3;
     width: 20px;
@@ -265,10 +262,14 @@ body {
     background: var(--basic-white);
     border-radius: 50%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+    border: none;
+    cursor: pointer;
 }
 
 .range-button-more {
+    display: inline-block;
     position: absolute;
+    /* Пусть с помощью жс left изменяют */
     bottom: -8px;
     left: 113px;
     z-index: 3;
@@ -277,10 +278,14 @@ body {
     background: var(--basic-white);
     border-radius: 50%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+    border: none;
+    cursor: pointer;
 }
 
-.range-point {
+.range-button-less::after, .range-button-more::after {
     position: absolute;
+    display: inline-block;
+    content: "";
     width: 4px;
     height: 4px;
     top: 8px;
@@ -403,13 +408,6 @@ body {
     color: var(--basic-black);
 }
 
-.search-button {
-    font-family: inherit;
-    font-weight: inherit;
-    text-transform: uppercase;
-    color: var(--basic-black);
-}
-
 .promo-product {
     width: 160px;
 }
@@ -509,8 +507,6 @@ body {
     margin-top: 184px;
 }
 
-
-/* не отклоняй за обертку) */
 .about-slider-container {
     display: flex;
     width: 1160px;
@@ -524,34 +520,30 @@ body {
     position: relative;
 }
 
-.about-slider .slide-1::after {
+.about-slider .slide::after {
     content: "";
     position: absolute;
-    width: 136px;
-    height: 164px;
     background: url(../img/courier.svg);
     top: -1px;
     right: -267px;
 }
 
+.about-slider .slide-1::after {
+    width: 136px;
+    height: 164px;
+    background: url(../img/courier.svg);
+}
+
 .about-slider .slide-2::after {
-    content: "";
-    position: absolute;
     width: 171px;
     height: 195px;
     background: url(../img/guarantee.svg);
-    top: -1px;
-    right: -267px;
 }
 
 .about-slider .slide-3::after {
-    content: "";
-    position: absolute;
     width: 156px;
     height: 188px;
     background: url(../img/credit.svg);
-    top: -1px;
-    right: -267px;
 }
 
 .about-content {
@@ -597,7 +589,7 @@ body {
     color: var(--basic-black);
     border: none;
     background: none;
-    padding-left: 24px;
+    padding-left: 18px;
     padding-right: 18px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -639,16 +631,10 @@ body {
 
 .about-btn-active:hover {
     background: var(--basic-black);
-
-    /* пустой коммент */
 }
 
-.button-container .about-btn:nth-of-type(2) {
-    margin-top: 20px;
-}
-
-.button-container .about-btn:nth-of-type(3) {
-    margin-top: 25px;
+.button-container .about-btn:not(:first-of-type) {
+    margin-top: 22px;
 }
 
 .main-slider .slider-name {
@@ -696,7 +682,7 @@ body {
     opacity: 1;
 }
 
-.filter-price-h2 {
+.filter-price-heading {
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 14px;
@@ -715,7 +701,7 @@ body {
     margin-bottom: 14px;
 }
 
-.filter-price-h2::before {
+.filter-price-heading::before {
     content: "";
     display: block;
     width: 200px;
@@ -777,13 +763,24 @@ body {
     margin-bottom: 50px;
 }
 
+
+.bread-crumb{
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--basic-black);
+}
+
+.bread-crumb:not(:first-child) {
+    margin-left: 16px;
+}
+
 .bread-crumbs {
     display: flex;
 }
 
-.bread-crumb a{
+.bread-crumb {
     opacity: 0.3;
-    color: var(--basic-black)
+    color: var(--basic-black);
 }
 
 .bread-crumb:hover {
@@ -794,7 +791,7 @@ body {
     opacity: 0.1;
 }
 
-.bread-crumb:not(:last-of-type)::after {
+.bread-crumb:not(.bread-crumb-now)::after {
     display: inline-block;
     vertical-align: middle;
     content: "";
@@ -828,10 +825,11 @@ body {
     font-size: 14px;
     line-height: 19px;
     opacity: 0.3;
-    color: var(--basic-black)
+    color: var(--basic-black);
 }
 
 .sort .sort-by:hover {
+    opacity: 1;
     opacity: 0.6;
 }
 
@@ -843,7 +841,8 @@ body {
     padding-left: 30px;
 }
 
-.sort-by-active {
+.sort .sort-by-active {
+    opacity: 1;
     padding-left: 0;
 }
 
@@ -871,24 +870,23 @@ body {
     opacity: 1;
 }
 
-.sort-navigate .up::after{
+.sort-navigate a::after {
     content: "";
     width: 10px;
     height: 11px;
-    background: url(../img/up.svg) no-repeat;
     display: inline-block;
-    margin-right: 24px;
     margin-top: 13px;
+    background-repeat: no-repeat;
 }
 
-.sort-navigate .down::after{
-    content: "";
-    width: 10px;
-    height: 11px;
-    background: url(../img/down.svg) no-repeat;
-    display: inline-block;
+.up a::after{
+    background-image: url(../img/up.svg);
+    margin-right: 24px;
+}
+
+.down a::after{
+    background-image: url(../img/down.svg);
     margin-right: 5px;
-    margin-top: 13px;
 }
 
 .sort-main fieldset {
@@ -942,6 +940,7 @@ body {
     color: var(--basic-black);
     text-align: center;
     opacity: 0.5;
+    margin-top: 22px;
 }
 
 .product-menu-compare:hover {
@@ -992,7 +991,7 @@ body {
     padding-right: 130px;
     width: 75px;
     margin: auto;     
-    font-family: "Gilroy";
+    font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -1011,7 +1010,6 @@ body {
     margin-top: 50px;
     display: grid;
     margin: 0 auto;
-    position: relative;
     justify-content: center;
     background-image: 
         linear-gradient(to bottom, var(--special-extralow-gray) 70px, var(--basic-grey-light) 70px),
@@ -1036,8 +1034,8 @@ body {
     list-style: none;
     margin: 0 auto;
     width: 1120px;
+    counter-reset: section;
 }
-
 
 .main-slide-container {
     background-image: linear-gradient(var(--special-yellow) 114px, var(--basic-white) 114px);
@@ -1047,7 +1045,7 @@ body {
     width: 1160px;
 }
 
-.main-slider::before {
+.main-slide::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -1058,15 +1056,14 @@ body {
     background: var(--basic-white);
 }
 
-.main-slider::after {
-    content: "01";
+.main-slide::after {
+    counter-increment: section; 
+    content: "0" counter(section);
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
-    text-transform: uppercase;
     color: var(--basic-white);
-    display: inline-block;
     position: absolute;
     left: 933px;
     top: -30px;
@@ -1289,18 +1286,7 @@ body {
     height: 24px;
     border: 3px solid var(--basic-black);
     margin-right: 18px;
-}
-
-.label-for-checkbox-white::before {
-    margin-top: 4px;
-}
-
-.label-for-checkbox-blue::before {
-    margin-top: 4px;
-}
-
-.label-for-checkbox-pink::before {
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 input:checked + .label-for-checkbox::before {
@@ -1376,6 +1362,7 @@ input:checked + .radio-button::before {
     margin-left: 20px;
     color: var(--basic-black);
     color: rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .site-search-form::before {
@@ -1387,7 +1374,56 @@ input:checked + .radio-button::before {
     background: url(../img/search.svg) no-repeat center center;
 }
 
-.site-search:hover {
+.site-search-form {
+    position: relative;
+}
+
+.site-search:focus ~ .search-button {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-search:focus ~ .search-button::after {
+    display: inline-block;
+}
+
+.search-button:hover {
+    background-color: var(--basic-black);
+    color: var(--basic-white);
+}
+
+.search-button:active {
+    opacity: 0.3;
+}
+
+.search-button::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -290px;
+    width: 290px;
+    height: 2px;
+    background-color: var(--basic-black);
+}
+
+.search-button {
+    display: none;
+    font-family: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    position: absolute;
+    bottom: -10px;
+    right: -150px;
+    background: none;
+    position: absolute;
+    width: 84px;
+    height: 50px;
+    border: 2px solid var(--basic-black);
+}
+
+.site-search:hover::placeholder{
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1411,9 +1447,9 @@ input:checked + .radio-button::before {
     position: absolute;
     left: -60px;
     width: 1160px;
-    height: 146px;
+    min-height: 163px;
     background: var(--special-yellow);
-    z-index: 100;
+    z-index: 10000;
 }
 
 .nav-catalog:hover .catalog-menu-items {
