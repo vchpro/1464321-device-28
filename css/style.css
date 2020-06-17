@@ -1034,11 +1034,7 @@ body {
     list-style: none;
     margin: 0 auto;
     width: 1120px;
-    counter-reset: section 0;
-}
-
-.main-slider li {
-    counter-increment: section;
+    counter-reset: section;
 }
 
 .main-slide-container {
@@ -1047,6 +1043,11 @@ body {
     position: relative;
     margin: 0 auto;
     width: 1160px;
+}
+
+.slide-hide {
+    visibility: hidden;
+    position: absolute;
 }
 
 .main-slide::before {
@@ -1061,6 +1062,7 @@ body {
 }
 
 .main-slide::after {
+    counter-increment: section;
     content: "0" counter(section);
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
