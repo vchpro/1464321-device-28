@@ -253,8 +253,8 @@ body {
 
 .range-button {
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
-    /* Пусть с помощью жс left изменяют */
     bottom: -8px;
     z-index: 3;
     width: 20px;
@@ -268,8 +268,8 @@ body {
 
 .range-button-more {
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
-    /* Пусть с помощью жс left изменяют */
     bottom: -8px;
     left: 113px;
     z-index: 3;
@@ -285,6 +285,7 @@ body {
 .range-button-less::after, .range-button-more::after {
     position: absolute;
     display: inline-block;
+    vertical-align: middle;
     content: "";
     width: 4px;
     height: 4px;
@@ -486,6 +487,7 @@ body {
 .promo-product a::before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 160px;
     height: 160px;
     background-color: var(--special-yellow-light);
@@ -689,6 +691,7 @@ body {
     line-height: 17px;
     letter-spacing: 0.1em;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .filter-color::before {
@@ -728,6 +731,7 @@ body {
     line-height: 16px;
     margin-top: 17px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .filter-price-min {
@@ -875,6 +879,7 @@ body {
     width: 10px;
     height: 11px;
     display: inline-block;
+    vertical-align: middle;
     margin-top: 13px;
     background-repeat: no-repeat;
 }
@@ -1055,6 +1060,7 @@ body {
 .main-slide::before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
     width: 100px;
     height: 7px;
@@ -1093,6 +1099,7 @@ body {
 
 .main-slide-nav-button {
     display: inline-block;
+    vertical-align: middle;
     background: none;
     box-sizing: border-box;
     padding: 0;
@@ -1107,6 +1114,7 @@ body {
     width: 6px;
     height: 6px;
     display: inline-block;
+    vertical-align: middle;
     box-sizing: border-box;
     border: 1px solid var(--basic-black);
     box-sizing: border-box;
