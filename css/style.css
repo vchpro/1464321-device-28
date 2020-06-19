@@ -1201,13 +1201,28 @@ body {
     filter: grayscale(0%);
 }
 
+.map-container {
+    position: fixed;
+    width: 994px;
+    height: 593px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100000;
+}
+
+.map-iframe {
+    background-image: url(../img/map-iframe.png);
+    background-repeat: no-repeat;
+}
+
+/* Contact form  */
+
 .contact-form {
     width: 960px;
     min-height: 550px;
     padding-top: 16px;
 }
-
-/* Contact form  */
 
 .contact-form input, .contact-form textarea {
     border: none;
@@ -1215,8 +1230,6 @@ body {
 
 .contact-form-container {
     position: fixed;
-    left: auto;
-    top: auto;
     width: 960px;
     height: 550px;
     background: var(--basic-white);
