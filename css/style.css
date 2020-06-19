@@ -1212,8 +1212,11 @@ body {
 }
 
 .map-iframe {
+    width: 994px;
+    height: 593px;
     background-image: url(../img/map-iframe.png);
     background-repeat: no-repeat;
+    border: none;
 }
 
 /* Contact form  */
