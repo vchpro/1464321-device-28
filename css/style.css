@@ -423,7 +423,7 @@ body {
 .promo-products {
     width: 1160px;
     margin: 0 auto;
-    margin-top: 116px;
+    margin-top: 94px;
 }
 
 .promo-products-container {
@@ -1027,6 +1027,7 @@ body {
 
 .main-slide {
     width: 989px;
+    min-height: 496px;
     margin: 0 auto;
     display: flex;
 }
@@ -1140,13 +1141,35 @@ body {
 
 .main-slide-img {
     margin-left: -15px;
-    margin-top: -14px
+    margin-top: -14px;
+    width: 526px;
+    height: 486px;
+}
+
+.main-slide-fitnes .main-slide-img {
+    margin-top: 10px;
+    margin-left: 11px;
 }
 
 .main-slide  .about-product {
     width: 492px;
-    margin-left: 127px;
+    margin-left: -15px;
     margin-top: 27px;
+}
+
+
+.main-slide-fitnes .about-product {
+    margin-left: -42px;
+}
+
+.main-slide-quadrocopter .main-slide-img {
+    margin-top: 65px;
+    height: 334px;
+    margin-left: -75px;
+}
+
+.main-slide-quadrocopter .about-product {
+    margin-left: 45px;
 }
 
 .partners {
