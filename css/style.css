@@ -1171,6 +1171,10 @@ body {
     margin-left: 11px;
 }
 
+.main-slide-fitnes::after, .main-slide-quadrocopter::after {
+    left: 901px;
+}
+
 .main-slide  .about-product {
     width: 492px;
     margin-left: -15px;
@@ -1878,7 +1882,7 @@ input:checked + .radio-button::before {
     content: "";
     width: 80px;
     height: 7px;
-    background: var(--special-social-icons)
+    background: var(--special-social-icons);
     position: relative;
     top: 12px;
 }
