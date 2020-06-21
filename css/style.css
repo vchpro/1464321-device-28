@@ -194,6 +194,7 @@ body {
     text-align: center;
     min-width: 200px;
     z-index: 0;
+    cursor: pointer;
 }
 
 .btn::after {
@@ -214,12 +215,12 @@ body {
 
 .btn-more-about-container {
     margin-top: 70px;
-    margin-bottom: 76px;
+    margin-bottom: 78px;
 }
 
 .btn-write-us-container {
     margin-top: 70px;
-    margin-bottom: 76px;
+    margin-bottom: 78px;
 }
 
 .btn-write-us {
@@ -456,7 +457,7 @@ body {
 }
 
 .promo-product a::before {
-    margin-bottom: 32px;
+    margin-bottom: 38px;
 }
 
 .promo-product a:hover::before {
@@ -1119,6 +1120,7 @@ body {
     height: 12px;
     border: 1px solid var(--basic-black);
     border-radius: 60%;
+    cursor: pointer;
 }
 
 .main-slide-nav-button-checked::before {
@@ -1133,7 +1135,7 @@ body {
     border-radius: 60%;
     position: absolute;
     right: 63px;
-    bottom: 3px;
+    bottom: 5px;
 }
 
 .main-slide .slider-name {
@@ -1235,6 +1237,26 @@ body {
     border: none;
 }
 
+.map {
+    position: relative;
+}
+
+.map-close {
+    position: absolute;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    background-color: none;
+    background-image: url(../img/button_close.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: var(--special-yellow);
+    background-position: center center;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 /* Contact form  */
 
 .contact-form {
@@ -1321,7 +1343,7 @@ body {
     width: 740px;
     height: 150px;
     padding-top: 16px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 19px;
@@ -1565,24 +1587,30 @@ input:checked + .radio-button::before {
 .catalog-menu-items-col-1 {
     margin-top: 18px;
     display: flex;
-    width: 530px;
-    justify-content: space-between;
     margin-left: 60px;
+}
+
+.catalog-menu-items-col-1 li:not(:first-of-type){
+    margin-left: 61px;
+}
+
+.catalog-menu-items-col-2 li:not(:first-of-type){
+    margin-left: 86px;
+}
+
+.catalog-menu-items-col-3 li:not(:first-of-type){
+    margin-left: 61px;
 }
 
 .catalog-menu-items-col-2 {
     margin-top: 20px;
     display: flex;
-    width: 333px;
-    justify-content: space-between;
     margin-left: 60px;
 }
 
 .catalog-menu-items-col-3 {
     margin-top: 20px;
     display: flex;
-    width: 102px;
-    justify-content: space-between;
     margin-left: 60px;
 }
 
