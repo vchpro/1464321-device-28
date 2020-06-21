@@ -1492,7 +1492,7 @@ input:checked + .radio-button::before {
     vertical-align: middle;
 }
 
-.site-search-form:focus-within .search-button::after {
+.site-search:focus ~ .search-button::after {
     display: inline-block;
 }
 
