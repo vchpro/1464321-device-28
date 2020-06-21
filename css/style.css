@@ -438,6 +438,8 @@ body {
     width: 1160px;
     margin: 0 auto;
     margin-top: 94px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .promo-products-container {
@@ -1477,6 +1479,7 @@ input:checked + .radio-button::before {
 .site-search-form::before {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     content: "";
     height: 12px;
     width: 12px;
@@ -1494,6 +1497,17 @@ input:checked + .radio-button::before {
 
 .site-search:focus ~ .search-button::after {
     display: inline-block;
+    vertical-align: middle;
+}
+
+.search-button:active:after {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.search-button:active {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .search-button:hover {
