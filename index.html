@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
       <header class="main-header">
@@ -344,7 +344,7 @@
 
 
  
-  <section class="contact-form-container hide">
+  <section class="contact-form-container">
     <h2 class="visually-hidden">Написать нам</h2>
     <button type="button" class="contact-form-close"></button>
 
@@ -353,12 +353,12 @@
       <div class="contact-form-name-email">
         <label>
           <span class="contact-form-label">Ваше имя:</span><br>
-          <input type="text" name="name" placeholder="Имя Фамилия" class="contact-form-input">
+          <input type="text" name="name" placeholder="Имя Фамилия" class="contact-form-input contact-form-login">
         </label>
 
         <label>
           <span class="contact-form-label">Ваш e-mail:</span><br>
-          <input type="email" name="email" placeholder="email@example.com" class="contact-form-input">
+          <input type="email" name="email" placeholder="email@example.com" class="contact-form-input contact-form-mail">
         </label>
 
        </div>
@@ -370,5 +370,7 @@
     <button type="submit" class="btn contact-form-send">Отправить</button>
     </form>
   </section>
+
+  <script src="js/script.js"></script>
   </body>
 </html>
