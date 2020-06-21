@@ -31,7 +31,7 @@ writeLink.addEventListener("click", function (evt) {
         writeMail.focus();
       }
     else {
-        writeText.focus();
+        writeName.focus();
     }
     writeText.value = "";
 });
