@@ -1216,10 +1216,12 @@ body {
 
 .partners li{
     filter: grayscale(100%);
+    opacity: 0.25;
 }
 
 .partners li:hover {
     filter: grayscale(0%);
+    opacity: 1.0;
 }
 
 .map-container {
