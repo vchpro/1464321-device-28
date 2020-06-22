@@ -5,6 +5,9 @@ var writeName = writePopup.querySelector(".contact-form-login");
 var writeMail = writePopup.querySelector(".contact-form-mail");
 var writeText = writePopup.querySelector(".contact-form-message");
 var writeForm = writePopup.querySelector(".contact-form");
+var mapLink = document.querySelector(".contacts-map");
+var mapPopup = document.querySelector(".map-container");
+var mapClose = mapPopup.querySelector(".map-close");
 
 var isStorageSupport = true;
 var storage = "";
@@ -16,6 +19,16 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("map-container-show")
+});
+
+mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("map-container-show");
+});
 
 writeLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -63,6 +76,10 @@ window.addEventListener("keydown", function (evt) {
         evt.preventDefault();
         writePopup.classList.remove("contact-form-container-show");
         writePopup.classList.remove("contact-form-container-error");
+      }
+      else if(mapPopup.classList.contains("map-container-show"))
+      {
+        mapPopup.classList.remove("map-container-show");
       }
     }
 });

@@ -771,6 +771,7 @@ body {
 
 .contacts-map {
     margin-top: 26px;
+    cursor: pointer;
 }
 
 .bread-crumb-container {
@@ -1225,10 +1226,18 @@ body {
     position: fixed;
     width: 994px;
     height: 593px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: 100000;
+    display: none;
+}
+
+.map-container-show {
+    display: block;
+    animation: bounce 0.6s;
 }
 
 .map-iframe {
@@ -1277,23 +1286,22 @@ body {
     height: 550px;
     background: var(--basic-white);
     box-shadow: 0px 10px 16px var(--special-015-black);
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: 100000;
     display: none;
 }
 
 .contact-form-container-show {
     display: block;
+    animation: bounce 0.6s;
 }
 
 .contact-form-container-error {
     animation: shake 0.6s;
-}
-
-.contact-form-container-show {
-    animation: bounce 0.6s;
 }
 
 .contact-form-close {
