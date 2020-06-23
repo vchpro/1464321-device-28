@@ -1387,7 +1387,7 @@ body {
 
 .contact-form-input:focus {
     background: none;
-    border: 2px solid #F7E296;
+    border: 2px solid var(--special-yellow-light);
 }
 
 .contact-form-input:invalid {
