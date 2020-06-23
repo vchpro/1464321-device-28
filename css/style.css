@@ -5,7 +5,6 @@
     --basic-grey: #464646;
     --basic-half-gray: #7E7E7E;
     --basic-grey-light: #E5E5E5;
-    --special-yellow: #F7E296;
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
     --special-low-gray: rgba(0, 0, 0, 0.3);
@@ -89,6 +88,7 @@ body {
     position: relative;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin-left: 61px;
     margin-top: 48px;
@@ -220,7 +220,8 @@ body {
 }
 
 .btn:active {
-    opacity: 0.3;
+    background-attachment: fixed;
+    color: rgba(0, 0, 0, 0.3)
 }
 
 .btn-more-about-container {
@@ -455,8 +456,11 @@ body {
 }
 
 .promo-products-container {
+    width: 1160px;
+    margin: 0 auto;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
 }
@@ -647,7 +651,7 @@ body {
 .about-btn-active {
     background: var(--basic-black);
     width: 277px;
-    color: var(--special-yellow);
+    color: var(--special-yellow-light);
     text-align: left;
     padding-left: 0px;
     padding-right: 115px;
@@ -688,7 +692,11 @@ body {
 }
 
 .feature:not(:first-of-type) {
-    margin-left: 60px;
+    margin-left: 55px;
+}
+
+.features .feature-weight {
+    margin-left: 40px;
 }
 
 .feature .characteristic {
@@ -1082,7 +1090,7 @@ body {
 }
 
 .main-slide-container {
-    background-image: linear-gradient(var(--special-yellow) 114px, var(--basic-white) 114px);
+    background-image: linear-gradient(var(--special-yellow-light) 114px, var(--basic-white) 114px);
     list-style: none;
     position: relative;
     margin: 0 auto;
@@ -1180,7 +1188,8 @@ body {
     padding: 0;
     margin-top: 50px;
     display: flex;
-    min-width: 444px;
+    flex-wrap: wrap;
+    width: 460px;
     list-style: none;
 }
 
@@ -1226,7 +1235,10 @@ body {
 }
 
 .partners ul{
+    width: 1160px;
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     padding: 0;
@@ -1285,7 +1297,7 @@ body {
     background-image: url(../img/button_close.svg);
     background-repeat: no-repeat;
     border: none;
-    background-color: var(--special-yellow);
+    background-color: var(--special-yellow-light);
     background-position: center center;
     border-radius: 50%;
     opacity: 0.5;
@@ -1363,7 +1375,7 @@ body {
 .contact-form-input {
     background: var(--special-contact-form);
     margin-top: 10px;
-    width: 340px;
+    width: 360px;
     height: 50px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -1396,14 +1408,14 @@ body {
 
 .contact-form-text {
     display: block;
-    padding-top: 30px;
+    padding-top: 34px;
     margin: 0 auto;
     width: 760px;
 }
 
 .contact-form-message {
-    width: 740px;
-    height: 150px;
+    width: 760px;
+    height: 170px;
     padding-top: 16px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: normal;
@@ -1470,8 +1482,6 @@ input:checked + .label-for-checkbox::before {
 }
 
 .checkbox:focus + .label-for-checkbox, .radio-button:focus + .radio-button-label {
-    outline: 5px red;
-    outline-style: solid;
     opacity: 0.6;
 }
 
@@ -1527,7 +1537,7 @@ input:checked + .radio-button-label::before {
 /* Header  */
 
 .main-header {
-    background-color: var(--special-yellow);
+    background-color: var(--special-yellow-light);
     min-height: 186px;
     width: 1160px;
     margin: 0 auto;
@@ -1638,7 +1648,7 @@ input:checked + .radio-button-label::before {
     left: -60px;
     width: 1160px;
     min-height: 163px;
-    background: var(--special-yellow);
+    background: var(--special-yellow-light);
     z-index: 10000;
 }
 
@@ -1947,6 +1957,7 @@ input:checked + .radio-button-label::before {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
     padding: 0;
     grid-column: 2/4;
     margin-left: auto;
@@ -1976,6 +1987,7 @@ input:checked + .radio-button-label::before {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
     padding: 0;
     margin: 0;
     margin-top: 34px;
@@ -2029,60 +2041,60 @@ input:checked + .radio-button-label::before {
      margin-left: 24px;
  }
 
-.footer-act-login:active {
+.footer-act-login a:active {
     opacity: 0.3;
 }
 
-.footer-act-logout:active {
+.footer-act-logout a:active {
     opacity: 0.3;
 }
 
-.footer-act-compare:active {
+.footer-act-compare a:active {
     opacity: 0.3;
 }
 
-.footer-act-cart:active {
+.footer-act-cart a:active {
     opacity: 0.3;
 }
 
-.footer-nav-delivery:active {
+.footer-nav-delivery a:active {
     opacity: 0.3;
 }
 
-.footer-nav-guarantee:active {
+.footer-nav-guarantee a:active {
     opacity: 0.3;
 }
 
-.footer-nav-contacts:active {
+.footer-nav-contacts a:active {
     opacity: 0.3;
 }
 
-.footer-act-login:hover {
+.footer-act-login a:hover {
     opacity: 0.6;
 }
 
-.footer-act-logout:hover {
+.footer-act-logout a:hover {
     opacity: 0.6;
 }
 
-.footer-act-compare:hover {
+.footer-act-compare a:hover {
     opacity: 0.6;
 }
 
-.footer-act-cart:hover {
+.footer-act-cart a:hover {
     opacity: 0.6;
 }
 
-.footer-nav-delivery:hover {
+.footer-nav-delivery a:hover {
     opacity: 0.6;
 }
 
-.footer-nav-guarantee:hover {
+.footer-nav-guarantee a:hover {
     opacity: 0.6;
 }
 
 
-.footer-nav-contacts:hover {
+.footer-nav-contacts a:hover {
     opacity: 0.6;
 }
 
