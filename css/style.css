@@ -1745,6 +1745,10 @@ input:checked + .radio-button-label::before {
     height: 22px;
 }
 
+.header-search {
+    width: 221px;
+}
+
 .header-delivery {
     margin-left: 264px;
 }
