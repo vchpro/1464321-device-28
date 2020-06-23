@@ -1460,11 +1460,18 @@ body {
     margin-top: 3px;
 }
 
+
 input:checked + .label-for-checkbox::before {
     background: url(../img/checked.svg) no-repeat center center;
 }
 
-.label-for-checkbox:hover, .radio-button-label:hover, .label-for-checkbox:focus, .radio-button-label:focus {
+.label-for-checkbox:hover, .radio-button-label:hover, .radio-button-label:focus {
+    opacity: 0.6;
+}
+
+.checkbox:focus + .label-for-checkbox, .radio-button:focus + .radio-button-label {
+    outline: 5px red;
+    outline-style: solid;
     opacity: 0.6;
 }
 
