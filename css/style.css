@@ -24,6 +24,8 @@
     --special-02-black: rgba(0, 0, 0, 0.2);
     --special-018-black: rgba(0, 0, 0, 0.18);
     --special-06-black: rgba(0, 0, 0, 0.6);
+    --special-middle-gray: #EAEAEA;
+    --special-error-color: #F6DADA;
 }
 
 
@@ -39,21 +41,22 @@ body {
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Gilroy';
-    src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
+    font-family: "Open Sans";
+    src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -77,6 +80,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-left: 61px;
     margin-top: 24px;
 }
@@ -96,12 +100,14 @@ body {
     list-style: none;
     min-width: 136px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .social-item:not(:last-of-type) {
     margin-right: 20px;
 }
+
 .facebook::before {
     content: url(../img/facebook.svg);
 }
@@ -211,6 +217,10 @@ body {
 
 .btn:hover {
     background: var(--special-yellow-dark);
+}
+
+.btn:active {
+    opacity: 0.3;
 }
 
 .btn-more-about-container {
@@ -426,6 +436,10 @@ body {
     width: 160px;
 }
 
+.promo-product:not(:first-of-type) {
+    margin-left: 40px;
+}
+
 .promo-products a{
     font-family: "Gilroy", "Arial", sans-serif;
     font-weight: 800;
@@ -435,8 +449,6 @@ body {
 }
 
 .promo-products {
-    width: 1160px;
-    margin: 0 auto;
     margin-top: 94px;
     padding-left: 20px;
     padding-right: 20px;
@@ -446,7 +458,7 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .promo-products-container li {
@@ -672,6 +684,11 @@ body {
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
+    min-width: 100px;
+}
+
+.feature:not(:first-of-type) {
+    margin-left: 60px;
 }
 
 .feature .characteristic {
@@ -833,6 +850,7 @@ body {
 
 .sort .sort-by-container {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     color: var(--basic-black);
     margin: auto 0;
@@ -848,8 +866,7 @@ body {
     color: var(--basic-black);
 }
 
-.sort .sort-by:hover {
-    opacity: 1;
+.sort .sort-by:hover, .sort .sort-by:focus{
     opacity: 0.6;
 }
 
@@ -932,11 +949,11 @@ body {
     position: relative;
 }
 
-.product:hover img{
+.product:hover img, .product:focus img{
     opacity: 0.3;
 }
 
-.product:hover .product-menu {
+.product:hover .product-menu, .product:focus .product-menu {
     display: block;
 }
 
@@ -965,6 +982,10 @@ body {
 }
 
 .product-menu-compare:hover {
+    opacity: 1;
+}
+
+.product-menu-compare:focus {
     opacity: 1;
 }
 
@@ -1002,7 +1023,7 @@ body {
 
 .filter-name-container {
     background: var(--special-extralow-gray);
-    height: 70px;
+    min-height: 70px;
 }
 
 .filter-name {
@@ -1023,7 +1044,7 @@ body {
 
 .address {
     font-style: normal;
-    margin-top: 22px;
+    margin-top: 34px;
     color: var(--basic-white);
 }
 
@@ -1101,7 +1122,7 @@ body {
 .main-slide-nav {
     position: absolute;
     right: 87px;
-    top: 317px;
+    bottom: 157px;
 }
 
 .main-slide-nav ul {
@@ -1159,8 +1180,7 @@ body {
     padding: 0;
     margin-top: 50px;
     display: flex;
-    width: 444px;
-    justify-content: space-between;
+    min-width: 444px;
     list-style: none;
 }
 
@@ -1202,21 +1222,23 @@ body {
 }
 
 .partners {
-    width: 1160px;
-    margin: 0 auto;
     margin-top: 90px;
 }
 
 .partners ul{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
 }
 
 .partners li{
     filter: grayscale(100%);
     opacity: 0.25;
+}
+
+.partners li:not(:first-of-type) {
+    margin-left: 40px;
 }
 
 .partners li:hover {
@@ -1344,6 +1366,21 @@ body {
     width: 340px;
     height: 50px;
     padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form-input:hover {
+    background: var(--special-middle-gray);
+}
+
+.contact-form-input:focus {
+    background: none;
+    border: 2px solid #F7E296;
+}
+
+.contact-form-input:invalid {
+    background: var(--special-error-color);
+    border: none;
 }
 
 .contact-form-input::placeholder {
@@ -1427,11 +1464,11 @@ input:checked + .label-for-checkbox::before {
     background: url(../img/checked.svg) no-repeat center center;
 }
 
-.label-for-checkbox:hover, .radio-button:hover {
+.label-for-checkbox:hover, .radio-button-label:hover, .label-for-checkbox:focus, .radio-button-label:focus {
     opacity: 0.6;
 }
 
-.label-for-checkbox:disabled, .radio-button:disabled {
+.checkbox:disabled +.label-for-checkbox, .radio-button:disabled + .radio-button-label {
     opacity: 0.25;
 }
 
@@ -1462,7 +1499,7 @@ input:checked + .label-for-checkbox::before {
     padding-left: 15px;
 }
 
-.radio-button::before {
+.radio-button-label::before {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: bottom;
@@ -1474,7 +1511,7 @@ input:checked + .label-for-checkbox::before {
     border-radius: 50%;
 }
 
-input:checked + .radio-button::before {
+input:checked + .radio-button-label::before {
     background: url(../img/checked-radio.svg) no-repeat center center;
 }
 
@@ -1712,7 +1749,6 @@ input:checked + .radio-button::before {
     margin-left: 264px;
 }
 
-
 .header-guarantee {
     margin-left: 35px;
 }
@@ -1867,7 +1903,7 @@ input:checked + .radio-button::before {
 
 .main-footer {
     background: var(--basic-dark);
-    height: 324px;
+    min-height: 324px;
 }
 
 .footer-nav-btn a {
@@ -1886,7 +1922,7 @@ input:checked + .radio-button::before {
 
 .main-footer .number {
     color: var(--basic-white);
-    margin-top: 22px;
+    margin-top: 34px;
     text-align: right;
 }
 
@@ -1899,6 +1935,7 @@ input:checked + .radio-button::before {
 .footer-act {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     grid-column: 2/4;
     margin-left: auto;
@@ -1927,9 +1964,10 @@ input:checked + .radio-button::before {
 .footer-items {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 34px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1939,7 +1977,6 @@ input:checked + .radio-button::before {
     width: 1160px;
     display: grid;
     grid-template-columns: 240px 1fr 240px;
-    grid-template-rows: 100px 56px;
     padding-top: 17px;
 }
 
@@ -1972,7 +2009,7 @@ input:checked + .radio-button::before {
 .social-footer-container {
     margin: 0 auto;
     width: 1160px;
-    margin-top: 55px;
+    margin-top: 65px;
     display: flex;
 }
 
@@ -2000,8 +2037,8 @@ input:checked + .radio-button::before {
     opacity: 0.3;
 }
 
-.footer-nav-guarantee {
-    margin-left: 34px;
+.footer-nav-delivery {
+    width: 158px;
 }
 
 .footer-nav-guarantee:active {
@@ -2036,6 +2073,10 @@ input:checked + .radio-button::before {
     opacity: 0.6;
 }
 
+.footer-nav-guarantee {
+    margin-right: 15px;
+}
+
 .footer-nav-contacts:hover {
     opacity: 0.6;
 }
@@ -2060,6 +2101,14 @@ input:checked + .radio-button::before {
     opacity: 1;
 }
 
+.facebook:focus {
+    opacity: 1;
+}
+
+.facebook:active {
+    opacity: 0.1;
+}
+
 .instagram {
     opacity: 0.3;
 }
@@ -2068,12 +2117,28 @@ input:checked + .radio-button::before {
     opacity: 1;
 }
 
+.instagram:focus {
+    opacity: 1;
+}
+
+.instagram:active {
+    opacity: 0.1;
+}
+
 .twitter {
     opacity: 0.3;
 }
 
 .twitter:hover {
     opacity: 1;
+}
+
+.twitter:focus {
+    opacity: 1;
+}
+
+.twitter:active {
+    opacity: 0.1;
 }
 
 /* Footer END */
