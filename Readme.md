@@ -6,6 +6,3 @@
 ---
 
 Просмотр сайта - https://vchpro.github.io/1464321-device-28/
-
-
-Связь со студентом: mail.vchpro@yandex.ru
