@@ -25,6 +25,7 @@
     --special-06-black: rgba(0, 0, 0, 0.6);
     --special-middle-gray: #EAEAEA;
     --special-error-color: #F6DADA;
+    --special-03-black: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -221,7 +222,7 @@ body {
 
 .btn:active {
     background-attachment: fixed;
-    color: rgba(0, 0, 0, 0.3)
+    color: var(--special-03-black);
 }
 
 .btn-more-about-container {
@@ -387,7 +388,7 @@ body {
     display: flex;
     margin-left: 40px;
     margin-top: 22px;
-    margin-bottom: 78px;
+    margin-bottom: 80px;
     flex-basis: 100%;
 }
 
@@ -1582,14 +1583,14 @@ input:checked + .radio-button-label::before {
     vertical-align: middle;
 }
 
-.search-button:active {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .search-button:hover {
     background-color: var(--basic-black);
     color: var(--basic-white);
+}
+
+.search-button:active {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .search-button:active {
@@ -1784,18 +1785,6 @@ input:checked + .radio-button-label::before {
     color: var(--special-low-gray);
 }
 
-.header-delivery a:active {
-    opacity: 0.3;
-}
-
-.header-guarantee a:active {
-    opacity: 0.3;
-}
-
-.header-contacts a:active {
-    opacity: 0.3;
-}
-
 .header-login-name:hover {
     opacity: 0.6;
 }
@@ -1820,12 +1809,6 @@ input:checked + .radio-button-label::before {
     opacity: 0.6;
 }
 
-.header-login {
-    margin-left: 320px; 
-    padding-left: 23px;
-    background: url(../img/user.svg) no-repeat center left;
- }
-
 .header-compare:hover {
     opacity: 0.6;
 }
@@ -1833,7 +1816,6 @@ input:checked + .radio-button-label::before {
 .header-cart:hover {
     opacity: 0.6;
 }
-
 
 .header-delivery a:hover {
     opacity: 0.6;
@@ -1847,6 +1829,23 @@ input:checked + .radio-button-label::before {
     opacity: 0.6;
 }
 
+.header-delivery a:active {
+    opacity: 0.3;
+}
+
+.header-guarantee a:active {
+    opacity: 0.3;
+}
+
+.header-contacts a:active {
+    opacity: 0.3;
+}
+
+.header-login {
+    margin-left: 320px; 
+    padding-left: 23px;
+    background: url(../img/user.svg) no-repeat center left;
+}
 
 .header-contacts a:focus {
     opacity: 0.3;
@@ -1947,7 +1946,6 @@ input:checked + .radio-button-label::before {
     text-align: right;
 }
 
-
 .footer-logo {
     display: block;
     margin-top: 48px;
@@ -1957,7 +1955,7 @@ input:checked + .radio-button-label::before {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     padding: 0;
     grid-column: 2/4;
     margin-left: auto;
@@ -1987,7 +1985,7 @@ input:checked + .radio-button-label::before {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     padding: 0;
     margin: 0;
     margin-top: 34px;
@@ -1996,7 +1994,7 @@ input:checked + .radio-button-label::before {
 }
 
 .footer-items li:not(:first-of-type) {
-    margin-left: 30px;
+    margin-left: 32px;
 }
 
 .main-footer-container {
@@ -2038,68 +2036,27 @@ input:checked + .radio-button-label::before {
 }
 
 .footer-act-logout {
-     margin-left: 24px;
- }
-
-.footer-act-login a:active {
-    opacity: 0.3;
+    margin-left: 24px;
 }
 
-.footer-act-logout a:active {
-    opacity: 0.3;
-}
-
-.footer-act-compare a:active {
-    opacity: 0.3;
-}
-
-.footer-act-cart a:active {
-    opacity: 0.3;
-}
-
-.footer-nav-delivery a:active {
-    opacity: 0.3;
-}
-
-.footer-nav-guarantee a:active {
-    opacity: 0.3;
-}
-
-.footer-nav-contacts a:active {
-    opacity: 0.3;
-}
-
-.footer-act-login a:hover {
+.footer-nav-btn a:hover {
     opacity: 0.6;
 }
 
-.footer-act-logout a:hover {
-    opacity: 0.6;
-}
-
-.footer-act-compare a:hover {
-    opacity: 0.6;
-}
-
-.footer-act-cart a:hover {
-    opacity: 0.6;
-}
-
-.footer-nav-delivery a:hover {
-    opacity: 0.6;
-}
-
-.footer-nav-guarantee a:hover {
-    opacity: 0.6;
-}
-
-
-.footer-nav-contacts a:hover {
+.footer-nav-item a:hover {
     opacity: 0.6;
 }
 
 .footer-logo:hover {
     opacity: 0.6;
+}
+
+.footer-nav-btn a:active {
+    opacity: 0.3;
+}
+
+.footer-nav-item a:active {
+    opacity: 0.3;
 }
 
 .htmlacademy:active {
